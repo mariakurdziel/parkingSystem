@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="kbogacka@mysql.agh.edu.pl" uuid="6b1dbf0d-25d9-4bf4-80fc-30a8af2fa09e">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://mysql.agh.edu.pl:3306/kbogacka</jdbc-url>
+      <driver-properties>
+        <property name="autoReconnect" value="true" />
+        <property name="zeroDateTimeBehavior" value="CONVERT_TO_NULL" />
+        <property name="tinyInt1isBit" value="false" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="characterSetResults" value="utf8" />
+        <property name="yearIsDateType" value="false" />
+        <property name="serverTimezone" value="UTC" />
+        <property name="useJDBCCompliantTimezoneShift" value="true" />
+        <property name="useLegacyDatetimeCode" value="false" />
+        <property name="useTimezone" value="true" />
+      </driver-properties>
+    </data-source>
+  </component>
+</project>
