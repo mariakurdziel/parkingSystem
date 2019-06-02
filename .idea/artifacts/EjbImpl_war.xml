@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="EjbImpl:war">
+    <output-path>$PROJECT_DIR$/EjbImpl/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>EjbImpl</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="EjbImpl-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="EjbImpl:war exploded" />
+    </root>
+  </artifact>
+</component>

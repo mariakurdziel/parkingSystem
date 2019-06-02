@@ -6,11 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="soa" />
+        <module name="WebApp" />
+        <module name="EjbImpl" />
+        <module name="EjbApi" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8">
+      <module name="EjbApi" target="1.10" />
+      <module name="EjbImpl" target="1.10" />
       <module name="soa" target="1.5" />
+      <module name="SOA_Parkometr" target="1.10" />
+      <module name="WebApp" target="1.10" />
     </bytecodeTargetLevel>
   </component>
 </project>

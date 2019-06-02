@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/parkingSystem.iml" filepath="$PROJECT_DIR$/parkingSystem.iml" />
-      <module fileurl="file://$PROJECT_DIR$/soa/soa.iml" filepath="$PROJECT_DIR$/soa/soa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjbApi/EjbApi.iml" filepath="$PROJECT_DIR$/EjbApi/EjbApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjbImpl/EjbImpl.iml" filepath="$PROJECT_DIR$/EjbImpl/EjbImpl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SOA_Parkometr.iml" filepath="$PROJECT_DIR$/SOA_Parkometr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebApp/WebApp.iml" filepath="$PROJECT_DIR$/WebApp/WebApp.iml" />
     </modules>
   </component>
 </project>

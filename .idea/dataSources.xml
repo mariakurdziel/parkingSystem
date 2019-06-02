@@ -19,5 +19,23 @@
         <property name="useTimezone" value="true" />
       </driver-properties>
     </data-source>
+    <data-source source="LOCAL" name="JPA-Zajecia/Hibernate" uuid="0a620765-709c-45da-bb7d-db3662c9699a">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+C:/Users/maria/SOA_Parkometr/EjbApi/src/main/resources/META-INF/persistence.xml</remarks>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://mysql.agh.edu.pl:3306/mkurdzie</jdbc-url>
+      <driver-properties>
+        <property name="autoReconnect" value="true" />
+        <property name="yearIsDateType" value="false" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="zeroDateTimeBehavior" value="convertToNull" />
+        <property name="characterSetResults" value="utf8" />
+        <property name="tinyInt1isBit" value="false" />
+      </driver-properties>
+    </data-source>
   </component>
 </project>

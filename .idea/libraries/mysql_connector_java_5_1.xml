@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="mysql-connector-java-5.1">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../Desktop/mysql-connector-java-5.1.38" />
+      <root url="jar://$PROJECT_DIR$/../Desktop/activemq-all.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Desktop/apache-maven-3.6.1-bin.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../Desktop/jersey-servlet-1.12.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../Desktop/resteasy-jaxrs-3.6.3.Final-all.zip!/resteasy-jaxrs-3.6.3.Final/docs/javadocs" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../Desktop/mysql-connector-java-5.1.38/src" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../Desktop/mysql-connector-java-5.1.38" recursive="false" />
+  </library>
+</component>
