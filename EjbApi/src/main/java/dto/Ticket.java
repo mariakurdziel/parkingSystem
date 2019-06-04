@@ -3,19 +3,22 @@ package dto;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Tickets")
+@Table(name = "tickets")
 public class Ticket {
 
     @Id
-    @Column(name="id_biletu",nullable=false)
+    @Column(name="ticket_id",nullable=false)
     private long id;
 
     @ManyToOne(cascade=CascadeType.ALL)
-    @JoinColumn(name = "id_parkometru")
+    @JoinColumn(name = "meter_id")
     private dto.Parkometr parkometr;
 
-    @Column(name="cena",nullable=false)
-    private String cena;
+    @Column(name="price",nullable=false)
+    private Double price;
+
+    @Column(name="registration__number",nullable=false)
+    private String registrationNumber;
 
     public long getId() {
         return id;
@@ -33,11 +36,20 @@ public class Ticket {
         this.parkometr = parkometr;
     }
 
-    public String getCena() {
-        return cena;
+    public double getPrice() {
+        return price;
     }
 
-    public void setCena(String cena) {
-        this.cena = cena;
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
+
+    public String getRegistrationNumber() {
+        return registrationNumber;
+    }
+
+    public void setRegistrationNumber(String number) {
+        this.registrationNumber = number;
     }
 }
