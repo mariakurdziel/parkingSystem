@@ -4,9 +4,10 @@
     <persistence-unit name="JPA-Zajecia">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <jta-data-source>java:/jboss/datasources/MySqlDS</jta-data-source>
-        <class>dto.Worker</class>
-        <class>dto.Ticket</class>
-        <class>dto.Parkometr</class>
+        <class>ejb.dto.Worker</class>
+        <class>ejb.dto.Ticket</class>
+        <class>ejb.dto.ParkingMeter</class>
+        <class>ejb.dto.ParkingMeter</class>
         <properties>
             <property name="hibernate.connection.url" value="jdbc:mysql://mysql.agh.edu.pl:3306/mkurdzie"/>
             <property name="hibernate.connection.username" value="mkurdzie"/>

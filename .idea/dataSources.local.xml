@@ -2,10 +2,10 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="kbogacka@mysql.agh.edu.pl" uuid="6b1dbf0d-25d9-4bf4-80fc-30a8af2fa09e">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
     </data-source>
     <data-source name="JPA-Zajecia/Hibernate" uuid="0a620765-709c-45da-bb7d-db3662c9699a">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
       <introspection-schemas>*:@</introspection-schemas>
     </data-source>
   </component>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <option name="USE_RELEASE_OPTION" value="false" />
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="WebApp" />
         <module name="EjbImpl" />
         <module name="EjbApi" />
+        <module name="WebApp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="EjbApi" target="1.10" />
-      <module name="EjbImpl" target="1.10" />
-      <module name="soa" target="1.5" />
-      <module name="SOA_Parkometr" target="1.10" />
-      <module name="WebApp" target="1.10" />
+      <module name="EjbApi" target="8" />
+      <module name="EjbImpl" target="8" />
+      <module name="SOA_Parkometr" target="8" />
+      <module name="WebApp" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
