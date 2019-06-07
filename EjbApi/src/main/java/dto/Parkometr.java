@@ -4,18 +4,24 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "parkometr")
+@Table(name = "parkingmeters")
 public class Parkometr {
 
     @Id
-    @Column(name="id_parkometru",nullable=false)
+    @Column(name="meter_id",nullable=false)
     private long id;
 
-    @OneToMany(mappedBy = "parkometr",cascade= CascadeType.ALL)
+    @OneToMany(mappedBy = "meter_id",cascade= CascadeType.ALL)
     private List<Worker> workers;
 
-    @OneToMany(mappedBy = "parkometr",cascade= CascadeType.ALL)
+    @OneToMany(mappedBy = "meter_id",cascade= CascadeType.ALL)
     private List<Ticket> tickets;
+
+    @Column(name="address",nullable=false)
+    private String address;
+
+    @Column(name="hour_price",nullable=false)
+    private Double hourPrice;
 
     public long getId() {
         return id;
@@ -39,5 +45,21 @@ public class Parkometr {
 
     public void setTickets(List<Ticket> tickets) {
         this.tickets = tickets;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public Double getHourPrice() {
+        return hourPrice;
+    }
+
+    public void setHourPrice(Double hourPrice) {
+        this.hourPrice = hourPrice;
     }
 }

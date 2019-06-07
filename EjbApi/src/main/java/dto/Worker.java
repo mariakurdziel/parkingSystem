@@ -3,11 +3,11 @@ package dto;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Workers")
+@Table(name = "workers")
 public class Worker {
 
     @Id
-    @Column(name="id_pracownika",nullable=false)
+    @Column(name="worker_id",nullable=false)
     private long id;
 
     @Column(name="name",nullable=false)
@@ -17,7 +17,7 @@ public class Worker {
     private String surname;
 
     @ManyToOne(cascade=CascadeType.ALL)
-    @JoinColumn(name = "id_parkometru")
+    @JoinColumn(name = "meter_id")
     private Parkometr parkometr;
 
 
@@ -52,4 +52,6 @@ public class Worker {
     public void setParkometr(Parkometr parkometr) {
         this.parkometr = parkometr;
     }
+
+
 }
