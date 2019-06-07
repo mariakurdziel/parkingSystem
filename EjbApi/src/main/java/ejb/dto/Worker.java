@@ -29,6 +29,15 @@ public class Worker {
     @Column(name="admin_credentials",nullable=false)
     private boolean is_admin;
 
+    public Worker(Long id, String name, String surname, String username, String password, boolean admincredentials) {
+        this.id=id;
+        this.name=name;
+        this.surname=surname;
+        this.login=username;
+        this.password=password;
+        this.is_admin=admincredentials;
+    }
+
 
     public long getId() {
         return id;

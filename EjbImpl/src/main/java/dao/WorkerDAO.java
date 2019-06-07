@@ -5,7 +5,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
-import javax.xml.registry.infomodel.User;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -74,6 +73,19 @@ public class WorkerDAO {
 
     public static Worker getWorkerById(Long id){
         return em.find(Worker.class,id);
+    }
+
+    public Worker getWorkerbyLogin(String login){
+
+        Query q = em.createQuery("FROM Worker", Worker.class);
+        workers = q.getResultList();
+
+        for (Worker w : workers)
+        {
+            if(w.getLogin().equals(login))
+                return w;
+        }
+        return null;
     }
 
 }

@@ -16,7 +16,7 @@
         <display-name>user</display-name>
         <web-resource-collection>
             <web-resource-name>userpages</web-resource-name>
-            <url-pattern>mainpage.xhtml</url-pattern>
+            <url-pattern>/user/index.xhtml</url-pattern>
         </web-resource-collection>
         <auth-constraint>
             <description/>
@@ -28,7 +28,7 @@
         <display-name>admin</display-name>
         <web-resource-collection>
             <web-resource-name>adminpages</web-resource-name>
-            <url-pattern>mainpage.xhtml</url-pattern>
+            <url-pattern>/admin/index.xhtml</url-pattern>
         </web-resource-collection>
         <auth-constraint>
             <description/>

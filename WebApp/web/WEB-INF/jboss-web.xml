@@ -5,5 +5,5 @@
            version="10.0">
 
 
-    <security-domain>java:/jaas/other</security-domain>
+    <security-domain>java:/jaas/Authentication</security-domain>
 </jboss-web>

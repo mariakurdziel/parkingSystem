@@ -3,7 +3,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
-import javax.xml.registry.infomodel.User;
 
 import ejb.dto.Ticket;
 import java.util.LinkedList;
