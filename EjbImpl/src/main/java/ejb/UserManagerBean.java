@@ -11,7 +11,7 @@ import javax.ejb.Stateful;
 
 @Stateful
 @Remote(UserManagerRemote.class)
-public class UserManagerBean implements UserManager {
+public class UserManagerBean implements UserManagerRemote {
 
     private static String MSG;
 

@@ -11,10 +11,10 @@ public class ParkingMeter {
     @Column(name="meter_id",nullable=false)
     private long id;
 
-    @OneToMany(mappedBy = "parking_meters",cascade= CascadeType.ALL)
+    @OneToMany(mappedBy = "parkometr",cascade= CascadeType.ALL)
     private List<Worker> workers;
 
-    @OneToMany(mappedBy = "parking_meters",cascade= CascadeType.ALL)
+    @OneToMany(mappedBy = "parkometr",cascade= CascadeType.ALL)
     private List<ParkingSpot> spots;
 
     @Column(name="hour_price",nullable=false)

@@ -15,10 +15,10 @@ public class ParkingSpot {
     private boolean reserved=false;
 
     @ManyToOne(cascade=CascadeType.ALL)
-    @JoinColumn(name = "parking_meter_id")
+    @JoinColumn(name = "meter_id")
     private ParkingMeter parkometr;
 
-    @OneToMany(mappedBy = "parkingspots",cascade= CascadeType.ALL)
+    @OneToMany(mappedBy = "spot",cascade= CascadeType.ALL)
     private List<Ticket> tickets;
 
     public long getId() {

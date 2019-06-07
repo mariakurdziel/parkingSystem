@@ -6,15 +6,15 @@ import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
 import java.io.Serializable;
 import ejb.UserManagerBean;
-
+import ejb.interfaces.remote.UserManagerRemote;
 
 
 @Named("User")
 @SessionScoped
 public class UserController implements Serializable {
 
-    @EJB(lookup = "java:global/EjbImpl-1.0-SNAPSHOT/UserManagerBean!interfaces.remotes.UserManagerRemote")
-    private UserManagerBean userManagerBean;
+    @EJB(lookup = "java:global/EjbImpl-1.0-SNAPSHOT/UserManagerBean!ejb.interfaces.remote.UserManagerRemote")
+    private UserManagerRemote userManagerBean;
     private Worker user;
     private String login;
     private String password;
@@ -25,13 +25,6 @@ public class UserController implements Serializable {
     }
 
 
-    public UserManagerBean getUserManagerBean() {
-        return userManagerBean;
-    }
-
-    public void setUserManagerBean(UserManagerBean userManagerBean) {
-        this.userManagerBean = userManagerBean;
-    }
 
     public Worker getUser() {
         return user;
@@ -55,5 +48,13 @@ public class UserController implements Serializable {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public UserManagerRemote getUserManagerBean() {
+        return userManagerBean;
+    }
+
+    public void setUserManagerBean(UserManagerRemote userManagerBean) {
+        this.userManagerBean = userManagerBean;
     }
 }
