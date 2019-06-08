@@ -13,10 +13,10 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="EjbApi" target="8" />
-      <module name="EjbImpl" target="8" />
-      <module name="SOA_Parkometr" target="8" />
-      <module name="WebApp" target="8" />
+      <module name="EjbApi" target="1.8" />
+      <module name="EjbImpl" target="1.8" />
+      <module name="SOA_Parkometr" target="1.8" />
+      <module name="WebApp" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
