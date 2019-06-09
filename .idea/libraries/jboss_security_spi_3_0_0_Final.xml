@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jboss-security-spi-3.0.0.Final">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../picketbox-3/jboss-security-spi-3.0.0.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

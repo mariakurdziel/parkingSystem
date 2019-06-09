@@ -2,9 +2,6 @@
   <library name="Maven: javax.xml.stream:stax-api:1.0">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/javax/xml/stream/stax-api/1.0/stax-api-1.0.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../Desktop/SOA/jboss-security-spi-3.0.0.Final.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../Desktop/SOA/jbosssx-3.0.0.Final.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../Desktop/SOA/picketbox-bare-3.0.0.Final.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$MAVEN_REPOSITORY$/javax/xml/stream/stax-api/1.0/stax-api-1.0-javadoc.jar!/" />
