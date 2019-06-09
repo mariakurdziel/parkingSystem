@@ -9,6 +9,12 @@
     </properties>
     <root id="archive" name="WebApp-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="WebApp:war exploded" />
+      <element id="javaee-facet-resources" facet="SOA_Parkometr/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SOA_Parkometr" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>

@@ -6,8 +6,10 @@
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="WebApp" />
+          <element id="module-output" name="SOA_Parkometr" />
         </element>
       </element>
+      <element id="javaee-facet-resources" facet="SOA_Parkometr/web/Web" />
     </root>
   </artifact>
 </component>

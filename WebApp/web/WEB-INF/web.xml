@@ -13,6 +13,13 @@
         <url-pattern>*.xhtml</url-pattern>
     </servlet-mapping>
 
+
+
+    <context-param>
+        <param-name>javax.ws.rs.Application </param-name>
+        <param-value>app</param-value>
+    </context-param>
+
     <!-- Time in seconds that facelets should be checked for changes since last request. A value of -1 disables refresh checking. -->
     <context-param>
         <param-name>javax.faces.FACELETS_REFRESH_PERIOD</param-name>
@@ -61,8 +68,8 @@
     <login-config>
         <auth-method>FORM</auth-method>
         <form-login-config>
-        <form-login-page>/web/login.xhtml</form-login-page>
-        <form-error-page>/web/error.xhtml</form-error-page>
+        <form-login-page>../login.xhtml</form-login-page>
+        <form-error-page>../error.xhtml</form-error-page>
     </form-login-config>
     </login-config>
 
