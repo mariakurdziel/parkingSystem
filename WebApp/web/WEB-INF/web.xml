@@ -61,8 +61,8 @@
     <login-config>
         <auth-method>FORM</auth-method>
         <form-login-config>
-        <form-login-page>/web/login.xhtml</form-login-page>
-        <form-error-page>/web/error.xhtml</form-error-page>
+        <form-login-page>/login.xhtml</form-login-page>
+        <form-error-page>/error.xhtml</form-error-page>
     </form-login-config>
     </login-config>
 
