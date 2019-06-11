@@ -2,8 +2,12 @@
   <library name="jboss-security-spi-3.0.0.Final">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../../picketbox-3/jboss-security-spi-3.0.0.Final.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../mysql-connector-java-5.1.38" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../mysql-connector-java-5.1.38/src" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../../mysql-connector-java-5.1.38" recursive="false" />
   </library>
 </component>

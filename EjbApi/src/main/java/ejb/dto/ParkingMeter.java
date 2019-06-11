@@ -62,4 +62,12 @@ public class ParkingMeter {
     public void setLocation(String location) {
         this.location = location;
     }
+
+    public ParkingMeter(Long id, double hour_price, String address){
+        this.id=id;
+        this.price=hour_price;
+        this.location=location;
+    }
+
+    public ParkingMeter(){}
 }

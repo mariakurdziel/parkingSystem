@@ -52,4 +52,11 @@ public class ParkingSpot {
     public void setTickets(List<Ticket> tickets) {
         this.tickets = tickets;
     }
+
+    ParkingSpot(){}
+
+    ParkingSpot(Long spot_id,boolean reserved){
+        this.id=spot_id;
+        this.reserved=reserved;
+    }
 }

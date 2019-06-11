@@ -6,6 +6,7 @@ import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
 import java.io.Serializable;
 import ejb.UserManagerBean;
+import ejb.interfaces.UserManager;
 import ejb.interfaces.remote.UserManagerRemote;
 
 
@@ -13,15 +14,23 @@ import ejb.interfaces.remote.UserManagerRemote;
 @SessionScoped
 public class UserController implements Serializable {
 
-    @EJB(lookup = "java:global/EjbImpl-1.0-SNAPSHOT/UserManagerBean!ejb.interfaces.remote.UserManagerRemote")
-    private UserManagerRemote userManagerBean;
+    @EJB
+    private UserManager userManagerBean;
     private Worker user;
-    private String login;
-    private String password;
+    private static String login;
+    private static String password;
 
 
-    public Worker getUserbyLogin(String login){
-        return userManagerBean.getUserbyLogin(login);
+    public String getUserbyLogin(){
+        user=userManagerBean.getUserbyLogin(login);
+        System.out.println(user.getName());
+        System.out.println(user.getPassword());
+        if(user.equals(null)|| !user.getPassword().equals(password)) {
+            System.out.println("Zle haslo!");
+            return "error";
+        }
+        else
+            return "panel";
     }
 
 
@@ -50,11 +59,11 @@ public class UserController implements Serializable {
         this.password = password;
     }
 
-    public UserManagerRemote getUserManagerBean() {
+    public UserManager getUserManagerBean() {
         return userManagerBean;
     }
 
-    public void setUserManagerBean(UserManagerRemote userManagerBean) {
+    public void setUserManagerBean(UserManager userManagerBean) {
         this.userManagerBean = userManagerBean;
     }
 }

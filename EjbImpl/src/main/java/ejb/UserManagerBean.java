@@ -7,17 +7,18 @@ import ejb.interfaces.UserManager;
 import ejb.interfaces.remote.UserManagerRemote;
 
 import javax.ejb.Remote;
-import javax.ejb.Stateful;
+import javax.ejb.Stateless;
+import java.io.Serializable;
 
-@Stateful
-@Remote(UserManagerRemote.class)
-public class UserManagerBean implements UserManagerRemote {
+@Stateless
+public class UserManagerBean implements UserManager, Serializable {
 
     private static String MSG;
 
 
     @Override
     public Worker getUser(Long userId) {
+        System.out.println("Jestem w beanie");
         return new WorkerDAO().getWorkerById(userId);
     }
 
@@ -44,8 +45,8 @@ public class UserManagerBean implements UserManagerRemote {
     }
 
     @Override
-    public void createUser(Long id,String username, String password, String name, String surname, boolean admincredentials) {
-        Worker w=new Worker(id,name,surname, username,password,admincredentials);
+    public void createUser(Long id,Long meter_id,String username, String password, String name, String surname, boolean admincredentials) {
+        Worker w=new Worker(id,meter_id,name,surname, username,password,admincredentials);
         new WorkerDAO().addWorker(w);
 
     }

@@ -1,10 +1,11 @@
 package ejb.dto;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "workers")
-public class Worker {
+public class Worker implements Serializable {
 
     @Id
     @Column(name="worker_id",nullable=false)
@@ -29,7 +30,7 @@ public class Worker {
     @Column(name="admin_credentials",nullable=false)
     private boolean is_admin;
 
-    public Worker(Long id, String name, String surname, String username, String password, boolean admincredentials) {
+    public Worker(Long id, Long meter_id,String name, String surname, String username, String password, boolean admincredentials) {
         this.id=id;
         this.name=name;
         this.surname=surname;
@@ -94,4 +95,6 @@ public class Worker {
     public void setIs_admin(boolean is_admin) {
         this.is_admin = is_admin;
     }
+
+    Worker(){}
 }

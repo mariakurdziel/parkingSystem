@@ -3,15 +3,15 @@
 
     <persistence-unit name="JPA-Zajecia">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <jta-data-source>MySqlDS</jta-data-source>
+        <jta-data-source>java:/MySqlDS</jta-data-source>
         <class>ejb.dto.Worker</class>
         <class>ejb.dto.Ticket</class>
         <class>ejb.dto.ParkingMeter</class>
-        <class>ejb.dto.ParkingMeter</class>
+        <class>ejb.dto.ParkingSpot</class>
         <properties>
             <property name="hibernate.connection.url" value="jdbc:mysql://mysql.agh.edu.pl:3306/mkurdzie"/>
             <property name="hibernate.connection.username" value="mkurdzie"/>
-            <!--<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>-->
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
             <property name="hibernate.connection.password" value="xrjRwhc8toutLBsD"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
             <property name="hibernate.archive.autodetection" value="class,"/>

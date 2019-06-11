@@ -72,19 +72,22 @@ public class WorkerDAO {
     }
 
     public static Worker getWorkerById(Long id){
-        return em.find(Worker.class,id);
+        System.out.println("jestemtu");
+        System.out.println( em.find(Worker.class,id));
+    return em.find(Worker.class,id);
     }
 
-    public Worker getWorkerbyLogin(String login){
+    public Worker getWorkerbyLogin(String login) {
 
         Query q = em.createQuery("FROM Worker", Worker.class);
         workers = q.getResultList();
 
-        for (Worker w : workers)
-        {
-            if(w.getLogin().equals(login))
-                return w;
-        }
+            for (Worker w : workers) {
+                if (w.getLogin().equals(login))
+                    return w;
+            }
+
+
         return null;
     }
 
