@@ -12,7 +12,11 @@ public class Ticket {
     @Column(name="ticket_id",nullable=false)
     private long id;
 
-    @ManyToOne(cascade=CascadeType.ALL)
+    @Column(name="parking_spot",nullable=false)
+    private long spot_id;
+
+
+   @ManyToOne(cascade=CascadeType.ALL)
     @JoinColumn(name = "spot_id")
     private ParkingSpot spot;
 
@@ -39,7 +43,7 @@ public class Ticket {
         this.id = id;
     }
 
-    public ParkingSpot getSpot() {
+   public ParkingSpot getSpot() {
         return spot;
     }
 
@@ -85,5 +89,25 @@ public class Ticket {
 
     public void setRegistration_number(String registration_number) {
         this.registration_number = registration_number;
+    }
+
+    public long getSpot_id() {
+        return spot_id;
+    }
+
+    public void setSpot_id(long spot_id) {
+        this.spot_id = spot_id;
+    }
+
+    public Ticket(){}
+
+    public Ticket(long ticket_id,long parking_spot,double price,String registration_number, Date start_time, Time duration,boolean is_paid){
+        this.id=ticket_id;
+        this.registration_number=registration_number;
+        this.spot_id=parking_spot;
+        this.price=price;
+        this.start_time=start_time;
+        this.duration=duration;
+        this.is_paid=is_paid;
     }
 }

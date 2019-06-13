@@ -14,7 +14,10 @@ public class ParkingSpot {
     @Column(name="reserved",nullable=false)
     private boolean reserved=false;
 
-    @ManyToOne(cascade=CascadeType.ALL)
+    @Column(name="parkometr",nullable=false)
+    private long park_id;
+
+   @ManyToOne(cascade=CascadeType.ALL)
     @JoinColumn(name = "meter_id")
     private ParkingMeter parkometr;
 
@@ -53,10 +56,19 @@ public class ParkingSpot {
         this.tickets = tickets;
     }
 
-    ParkingSpot(){}
+    public ParkingSpot(){}
 
-    ParkingSpot(Long spot_id,boolean reserved){
+    public ParkingSpot(Long spot_id, Long park_id, boolean reserved){
+        this.park_id=park_id;
         this.id=spot_id;
         this.reserved=reserved;
+    }
+
+    public long getPark_id() {
+        return park_id;
+    }
+
+    public void setPark_id(long park_id) {
+        this.park_id = park_id;
     }
 }

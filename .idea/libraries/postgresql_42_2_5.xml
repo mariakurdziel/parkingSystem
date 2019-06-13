@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="postgresql-42.2.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../wildfly-16.0.0.Final/modules/system/layers/base/org/postgresql/main/postgresql-42.2.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

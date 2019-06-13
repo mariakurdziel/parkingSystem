@@ -1,10 +1,14 @@
 package controllers;
 import ejb.dto.Worker;
 
+import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
+import javax.faces.context.FacesContext;
 import javax.inject.Named;
 import java.io.Serializable;
+import java.security.Principal;
+
 import ejb.UserManagerBean;
 import ejb.interfaces.UserManager;
 import ejb.interfaces.remote.UserManagerRemote;
@@ -16,24 +20,21 @@ public class UserController implements Serializable {
 
     @EJB
     private UserManager userManagerBean;
-    private Worker user;
+    private static Worker user;
     private static String login;
     private static String password;
 
 
-    public String getUserbyLogin(){
-        user=userManagerBean.getUserbyLogin(login);
-        System.out.println(user.getName());
-        System.out.println(user.getPassword());
-        if(user.equals(null)|| !user.getPassword().equals(password)) {
-            System.out.println("Zle haslo!");
-            return "error";
+    @PostConstruct
+    public void init(){
+        if (user == null) {
+            Principal principal = FacesContext.getCurrentInstance().getExternalContext().getUserPrincipal();
+            if (principal != null) {
+                user = userManagerBean.getUserbyLogin(principal.getName());
+            }
         }
-        else
-            return "panel";
+
     }
-
-
 
     public Worker getUser() {
         return user;
