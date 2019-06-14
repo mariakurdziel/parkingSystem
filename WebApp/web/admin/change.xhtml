@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"  xmlns:p="http://primefaces.org/ui"
+
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xml:lang="en" lang="en">
+<head>
+    <title>Zmień cudzego hasła </title>
+</head>
+<h:body>
+
+
+    <h:form method="post" action="" name="loginForm">
+        <h1> Zmień hasło:</h1>
+        <h:panelGrid columns="2">
+            <h:outputLabel id="login" value="Login użytkownika:"/>
+            <h:inputText id="change_login" var = "login" value="#{passwordController.login}"/>
+            <h:outputLabel id="password" value="Nowe hasło:"/>
+            <h:inputSecret id="change_password" var = "newPassword" value = "#{passwordController.newPassword}"/>
+            <p:commandButton value="Password"  action="#{passwordController.changePassword(passwordController.login, passwordController.newPassword)}"  />
+        </h:panelGrid>
+    </h:form>
+</h:body>
+</html>

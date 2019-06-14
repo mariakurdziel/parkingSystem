@@ -1,41 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="kbogacka@mysql.agh.edu.pl" uuid="6b1dbf0d-25d9-4bf4-80fc-30a8af2fa09e">
-      <driver-ref>mysql</driver-ref>
+    <data-source source="LOCAL" name="JPA-Zajecia/Hibernate" uuid="d3619027-6dc7-4471-80d9-8bb7b9b57e9d">
+      <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://mysql.agh.edu.pl:3306/kbogacka</jdbc-url>
-      <driver-properties>
-        <property name="autoReconnect" value="true" />
-        <property name="zeroDateTimeBehavior" value="CONVERT_TO_NULL" />
-        <property name="tinyInt1isBit" value="false" />
-        <property name="characterEncoding" value="utf8" />
-        <property name="characterSetResults" value="utf8" />
-        <property name="yearIsDateType" value="false" />
-        <property name="serverTimezone" value="UTC" />
-        <property name="useJDBCCompliantTimezoneShift" value="true" />
-        <property name="useLegacyDatetimeCode" value="false" />
-        <property name="useTimezone" value="true" />
-      </driver-properties>
-    </data-source>
-    <data-source source="LOCAL" name="JPA-Zajecia/Hibernate" uuid="0a620765-709c-45da-bb7d-db3662c9699a">
-      <driver-ref>mysql</driver-ref>
-      <synchronize>true</synchronize>
-      <imported>true</imported>
-      <remarks>Hibernate
-
-C:/Users/maria/SOA_Parkometr/EjbApi/src/main/resources/META-INF/persistence.xml</remarks>
-      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://mysql.agh.edu.pl:3306/mkurdzie</jdbc-url>
-      <driver-properties>
-        <property name="autoReconnect" value="true" />
-        <property name="yearIsDateType" value="false" />
-        <property name="characterEncoding" value="utf8" />
-        <property name="zeroDateTimeBehavior" value="convertToNull" />
-        <property name="characterSetResults" value="utf8" />
-        <property name="tinyInt1isBit" value="false" />
-      </driver-properties>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/baza</jdbc-url>
     </data-source>
   </component>
 </project>

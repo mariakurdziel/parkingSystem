@@ -7,10 +7,12 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
-          <factory-entry name="JPA-Zajecia" value="0a620765-709c-45da-bb7d-db3662c9699a" />
+          <factory-entry name="JPA-Zajecia" value="d3619027-6dc7-4471-80d9-8bb7b9b57e9d" />
           <factory-entry name="activemq" />
         </datasource-mapping>
-        <naming-strategy-map />
+        <naming-strategy-map>
+          <unit-entry name="JPA-Zajecia" />
+        </naming-strategy-map>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />
       </configuration>
     </facet>

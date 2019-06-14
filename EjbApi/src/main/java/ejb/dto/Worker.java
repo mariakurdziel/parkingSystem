@@ -26,7 +26,10 @@ public class Worker implements Serializable {
     @Column(name="admin_credentials",nullable=false)
     private boolean is_admin;
 
-    public Worker(Long id, Long meter_id,String name, String surname, String username, boolean admincredentials) {
+    @Column(name="password_hash", nullable=false)
+    private String passwordHash;
+
+    public Worker(Long id, Long meter_id,String name, String surname, String username, boolean admincredentials, String passwordHash) {
 
         this.id=id;
         this.meter=meter_id;
@@ -34,6 +37,7 @@ public class Worker implements Serializable {
         this.surname=surname;
         this.login=username;
         this.is_admin=admincredentials;
+        this.passwordHash=passwordHash;
     }
 
 
@@ -83,6 +87,14 @@ public class Worker implements Serializable {
 
     public void setMeter(long meter) {
         this.meter = meter;
+    }
+
+    public void setPasswordHash(String hash){
+        this.passwordHash = hash;
+    }
+
+    public String getPasswordHash(){
+        return passwordHash;
     }
 
     public Worker(){}

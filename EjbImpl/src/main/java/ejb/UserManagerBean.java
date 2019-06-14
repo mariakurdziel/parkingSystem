@@ -15,6 +15,11 @@ public class UserManagerBean implements UserManager, Serializable {
 
     private static String MSG;
 
+    @Override
+    public void changePassword(String login, String passwordHash){
+        new WorkerDAO().changeWorkerPassword(login, passwordHash);
+    }
+
 
     @Override
     public Worker getUser(Long userId) {
@@ -28,7 +33,7 @@ public class UserManagerBean implements UserManager, Serializable {
 
     @Override
     public Worker loginUser(String username) throws InvalidLoginCredentialsException {
-       /* Worker w=new WorkerDAO().getWorkerbyLogin(username);
+       /*Worker w=new WorkerDAO().getWorkerbyLogin(username);
 
         if(w==null) {
             setMSG("No user with such a login found!");
@@ -47,8 +52,8 @@ public class UserManagerBean implements UserManager, Serializable {
     }
 
     @Override
-    public void createUser(Long id,Long meter_id,String username,String name, String surname, boolean admincredentials) {
-        Worker w=new Worker(id,meter_id,name,surname, username,admincredentials);
+    public void createUser(Long id,Long meter_id,String username,String name, String surname, boolean admincredentials, String hashedPassword) {
+        Worker w=new Worker(id,meter_id,name,surname, username,admincredentials, hashedPassword);
         new WorkerDAO().addWorker(w);
 
     }

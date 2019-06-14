@@ -67,4 +67,6 @@ public class UserController implements Serializable {
     public void setUserManagerBean(UserManager userManagerBean) {
         this.userManagerBean = userManagerBean;
     }
+
+
 }
