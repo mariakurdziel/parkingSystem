@@ -21,7 +21,7 @@ public class DatabaseController {
         EntityManagerFactory factory = Persistence.createEntityManagerFactory("JPA-Zajecia");
         EntityManager em = factory.createEntityManager();
         try {
-            Worker w1=new Worker((long)2246,(long)223,"Albert","Camus","albert123",true, "f1863f23897ea9c14d9606d667e84685");
+           /* Worker w1=new Worker((long)2246,(long)223,"Albert","Camus","albert123",true, "f1863f23897ea9c14d9606d667e84685");
             Worker w2=new Worker((long)2247,(long)222,"Monika","Szwaja","monia7",false, "f1863f23897ea9c14d9606d667e84685");
             Worker w3=new Worker((long)2248,(long)222,"Teodor","Kowalski","teodorr",false, "f1863f23897ea9c14d9606d667e84685");
             Worker w4=new Worker((long)2249,(long)220,"Milan","Nowak","nowak14",true, "f1863f23897ea9c14d9606d667e84685");
@@ -49,18 +49,19 @@ public class DatabaseController {
             ParkingSpot s9=new ParkingSpot((long)2448,(long)225,false);
             ParkingSpot s10=new ParkingSpot((long)2449,(long)225,false);
 
-            Ticket t1=new Ticket((long)1,(long)2444,2.5,"POL 22 33",new Date(),new Time(0,0,0),false);
-            Ticket t2=new Ticket((long)2,(long)2445,2.5,"POL 28 34",new Date(),new Time(0,0,0),false);
-            Ticket t3=new Ticket((long)3,(long)2333,2.0,"POL 22 33",new Date(),new Time(0,0,0),false);
-            Ticket t4=new Ticket((long)4,(long)2333,2.0,"POL 26 38",new Date(),new Time(0,0,0),false);
-            Ticket t5=new Ticket((long)5,(long)2446,2.5,"POL 29 37",new Date(),new Time(0,0,0),false);
-            Ticket t6=new Ticket((long)6,(long)2447,2.5,"POL 22 40",new Date(),new Time(0,0,0),false);
-            Ticket t8=new Ticket((long)8,(long)2448,2.5,"POL 22 88",new Date(),new Time(0,0,0),false);
-            Ticket t9=new Ticket((long)9,(long)2388,2.5,"POL 22 69",new Date(),new Time(0,0,0),false);
-            Ticket t10=new Ticket((long)10,(long)2445,2.5,"POL 11 33",new Date(),new Time(0,0,0),false);
+           */
 
+            Ticket t1=new Ticket((long)1,(long)2444,(long)223,2.5,"POL 22 33",new Date(),new Time(1,15,0));
+            Ticket t2=new Ticket((long)2,(long)2445,(long)223,2.5,"POL 28 34",new Date(),new Time(0,40,0));
+            Ticket t3=new Ticket((long)3,(long)2333,(long)222,2.0,"POL 22 33",new Date(),new Time(2,0,0));
+            Ticket t4=new Ticket((long)4,(long)2333,(long)222,2.0,"POL 26 38",new Date(),new Time(0,15,0));
+            Ticket t5=new Ticket((long)5,(long)2446,(long)220,2.5,"POL 29 37",new Date(),new Time(0,2,0));
+            Ticket t6=new Ticket((long)6,(long)2447,(long) 220,2.5,"POL 22 40",new Date(),new Time(0,13,0));
+            Ticket t8=new Ticket((long)8,(long)2448,(long)225,2.5,"POL 22 88",new Date(),new Time(17,0,0));
+            Ticket t9=new Ticket((long)9,(long)2388,(long)224,2.5,"POL 22 69",new Date(),new Time(0,14,0));
+            Ticket t10=new Ticket((long)10,(long)2445,(long)223,2.5,"POL 11 33",new Date(),new Time(1,0,0));
             em.getTransaction().begin();
-            w1=em.merge(w1);
+           /* w1=em.merge(w1);
             w2=em.merge(w2);
             w3=em.merge(w3);
             w4=em.merge(w4);
@@ -85,7 +86,7 @@ public class DatabaseController {
             s7=em.merge(s7);
             s8=em.merge(s8);
             s9=em.merge(s9);
-            s10=em.merge(s10);
+            s10=em.merge(s10);*/
 
             t1=em.merge(t1);
             t2=em.merge(t2);
@@ -98,8 +99,8 @@ public class DatabaseController {
             t10=em.merge(t10);
 
             em.getTransaction().commit();
-            System.out.println("Zapisano w bazie: " + w1);
-            System.out.println("Zapisano w bazie: " + w2);
+            System.out.println("Zapisano w bazie: " + t1);
+            System.out.println("Zapisano w bazie: " + t2);
         }
         catch(Exception e) {
             System.err.println("Blad przy dodawaniu rekordu: " + e);

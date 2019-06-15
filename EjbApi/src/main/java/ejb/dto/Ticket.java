@@ -29,8 +29,8 @@ public class Ticket {
     @Column(name="duration",nullable=false)
     private Time duration;
 
-    @Column(name="is_paid",nullable=false)
-    private boolean is_paid;
+    @Column(name="parking_id",nullable=false)
+    private long id_parkingu;
 
     @Column(name="registration_number",nullable=false)
     private String registration_number;
@@ -75,12 +75,12 @@ public class Ticket {
         this.duration = duration;
     }
 
-    public boolean isIs_paid() {
-        return is_paid;
+    public long getId_parkingu() {
+        return id_parkingu;
     }
 
-    public void setIs_paid(boolean is_paid) {
-        this.is_paid = is_paid;
+    public void setId_parkingu(long id_parkingu) {
+        this.id_parkingu = id_parkingu;
     }
 
     public String getRegistration_number() {
@@ -101,13 +101,13 @@ public class Ticket {
 
     public Ticket(){}
 
-    public Ticket(long ticket_id,long parking_spot,double price,String registration_number, Date start_time, Time duration,boolean is_paid){
+    public Ticket(long ticket_id,long parking_spot,long id_parkingu,double price,String registration_number, Date start_time, Time duration){
         this.id=ticket_id;
         this.registration_number=registration_number;
         this.spot_id=parking_spot;
         this.price=price;
         this.start_time=start_time;
         this.duration=duration;
-        this.is_paid=is_paid;
+        this.id_parkingu=id_parkingu;
     }
 }

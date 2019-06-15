@@ -9,6 +9,7 @@ import ejb.interfaces.remote.UserManagerRemote;
 import javax.ejb.Remote;
 import javax.ejb.Stateless;
 import java.io.Serializable;
+import java.util.List;
 
 @Stateless
 public class UserManagerBean implements UserManager, Serializable {
@@ -56,6 +57,18 @@ public class UserManagerBean implements UserManager, Serializable {
         Worker w=new Worker(id,meter_id,name,surname, username,admincredentials, hashedPassword);
         new WorkerDAO().addWorker(w);
 
+    }
+
+    @Override
+    public void createUser(Long id,Long meter_id,String username,String name, String surname, boolean admincredentials) {
+        Worker w=new Worker(id,meter_id,name,surname, username,admincredentials);
+        new WorkerDAO().addWorker(w);
+    }
+
+    @Override
+    public List<Worker> getListofWorkers() {
+        WorkerDAO dao=new WorkerDAO();
+        return dao.getWorkers();
     }
 
     public static String getMSG() {

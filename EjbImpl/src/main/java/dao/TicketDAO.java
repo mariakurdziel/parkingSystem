@@ -67,7 +67,8 @@ public class TicketDAO {
             foundTicket.setStart_time(ticket.getStart_time());
             foundTicket.setDuration(ticket.getDuration());
             foundTicket.setRegistration_number(ticket.getRegistration_number());
-            foundTicket.setIs_paid(ticket.isIs_paid());
+            foundTicket.setSpot_id(ticket.getSpot_id());
+            foundTicket.setId_parkingu(ticket.getId_parkingu());
             em.getTransaction().commit();
         }  catch(Exception e) {
             em.getTransaction().rollback();
@@ -79,4 +80,11 @@ public class TicketDAO {
         return em.find(Ticket.class,id);
     }
 
+    public static List<Ticket> getTickets() {
+        return tickets;
+    }
+
+    public static void setTickets(List<Ticket> tickets) {
+        TicketDAO.tickets = tickets;
+    }
 }

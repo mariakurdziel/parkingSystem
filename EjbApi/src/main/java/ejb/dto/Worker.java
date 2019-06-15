@@ -30,7 +30,6 @@ public class Worker implements Serializable {
     private String passwordHash;
 
     public Worker(Long id, Long meter_id,String name, String surname, String username, boolean admincredentials, String passwordHash) {
-
         this.id=id;
         this.meter=meter_id;
         this.name=name;
@@ -38,6 +37,16 @@ public class Worker implements Serializable {
         this.login=username;
         this.is_admin=admincredentials;
         this.passwordHash=passwordHash;
+    }
+
+    public Worker(Long id, Long meter_id,String name, String surname, String username, boolean admincredentials) {
+        this.id=id;
+        this.meter=meter_id;
+        this.name=name;
+        this.surname=surname;
+        this.login=username;
+        this.is_admin=admincredentials;
+        this.passwordHash="f1863f23897ea9c14d9606d667e84685";
     }
 
 

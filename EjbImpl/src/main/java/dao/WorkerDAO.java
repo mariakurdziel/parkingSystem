@@ -11,7 +11,7 @@ import java.util.List;
 public class WorkerDAO {
     EntityManagerFactory factory;
     static EntityManager em;
-    static List<Worker> workers =new LinkedList<Worker>();
+    private List<Worker> workers =new LinkedList<Worker>();
 
     public WorkerDAO() {
         factory = Persistence.createEntityManagerFactory("JPA-Zajecia");
@@ -19,7 +19,7 @@ public class WorkerDAO {
         getAllWorkers();
     }
 
-    public static void getAllWorkers() {
+    public void getAllWorkers() {
 
         EntityManagerFactory factory = Persistence.createEntityManagerFactory("JPA-Zajecia");
         EntityManager em = factory.createEntityManager();
@@ -100,6 +100,7 @@ public class WorkerDAO {
                 if (w.getLogin().equals(newLogin)){
                     em.getTransaction().begin();
                     w.setPasswordHash(passwordHash);
+                    w = em.merge(w);
                     em.getTransaction().commit();
                 }
             }
@@ -111,4 +112,11 @@ public class WorkerDAO {
         }
     }
 
+    public List<Worker> getWorkers() {
+        return workers;
+    }
+
+    public void setWorkers(List<Worker> workers) {
+        this.workers = workers;
+    }
 }
