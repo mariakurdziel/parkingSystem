@@ -10,14 +10,130 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://java.sun.com/jsf/html">
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
 
 <h:head>
-    <title>WItaj!</title>
+    <title>Witaj!</title>
 </h:head>
 
 <h:body>
+    <h:form id="panel">
     <h:outputLabel value="Witaj #{User.user.name}!" />
+    <p:commandButton value = "Wyloguj się" style="float: right;" action = "#{User.LogOut}" />
+    <p:growl id="msgs" showDetail="true" />
+    <br/><br/><br/><br/>
+     <h:panelGroup rendered="#{User.render1}">
+    <p:tabView>
+        <p:tab title="Twoje dane">
+            <h:panelGrid columns="2" cellpadding="10">
+                <h:outputText value="Id użytkownika: #{User.user.id}" /><br/>
+                <h:outputText value="Login użytkownika: #{User.user.login}" /><br/>
+                <h:outputText value="Imię użytkownika: #{User.user.name}" /><br/>
+                <h:outputText value="Nazwisko użytkownika: #{User.user.surname}" /><br/>
+                <h:outputText value="Id parkometru: #{User.user.meter}" /><br/>
+            </h:panelGrid>
+        </p:tab>
+        <p:tab title="Parking">
+            <h:panelGrid columns="2" cellpadding="10">
+                <h:outputText value="Id parkingu: #{Parking.parking.id}" /><br/>
+                <h:outputText value="Adres parkingu: #{Parking.parking.location}" /><br/>
+                <h:outputText value="Bilety:"/><br/>
+                <p:dataTable var="ticket" value="#{Parking.tickets}">
+                    <p:column headerText="Id biletu">
+                        <h:outputText value="#{ticket.id}" />
+                    </p:column>
+
+                    <p:column headerText="Cena biletu">
+                        <h:outputText value="#{ticket.price}" />
+                    </p:column>
+
+                    <p:column headerText="Data rozpoczęcia">
+                        <h:outputText value="#{ticket.start_time}" />
+                    </p:column>
+
+                    <p:column headerText="Czas trwania">
+                        <h:outputText value="#{ticket.duration}" />
+                    </p:column>
+
+                    <p:column headerText="Numer rejestracyjny samochodu">
+                        <h:outputText value="#{ticket.registration_number}" />
+                    </p:column>
+                </p:dataTable>
+            </h:panelGrid>
+        </p:tab>
+    </p:tabView>
+     </h:panelGroup>
+        <h:panelGroup rendered="#{User.render2}">
+        <p:tabView>
+            <p:tab title="Twoje dane">
+                <h:panelGrid columns="2" cellpadding="10">
+                    <h:outputText value="Id użytkownika: #{User.user.id}" /><br/>
+                    <h:outputText value="Login użytkownika: #{User.user.login}" /><br/>
+                    <h:outputText value="Imię użytkownika: #{User.user.name}" /><br/>
+                    <h:outputText value="Nazwisko użytkownika: #{User.user.surname}" /><br/>
+                    <h:outputText value="Id parkometru: #{User.user.meter}" /><br/>
+                </h:panelGrid>
+            </p:tab>
+            <p:tab title="Parking">
+                <h:panelGrid columns="2" cellpadding="10">
+                    <h:outputText value="Id parkingu: #{Parking.parking.id}" /><br/>
+                    <h:outputText value="Adres parkingu: #{Parking.parking.location}" /><br/>
+                    <h:outputText value="Bilety:"/><br/>
+                    <p:dataTable var="ticket" value="#{Parking.tickets}">
+                        <p:column headerText="Id biletu">
+                            <h:outputText value="#{ticket.id}" />
+                        </p:column>
+
+                        <p:column headerText="Cena biletu">
+                            <h:outputText value="#{ticket.price}" />
+                        </p:column>
+
+                        <p:column headerText="Data rozpoczęcia">
+                            <h:outputText value="#{ticket.start_time}" />
+                        </p:column>
+
+                        <p:column headerText="Czas trwania">
+                            <h:outputText value="#{ticket.duration}" />
+                        </p:column>
+
+                        <p:column headerText="Numer rejestracyjny samochodu">
+                            <h:outputText value="#{ticket.registration_number}" />
+                        </p:column>
+                    </p:dataTable>
+                </h:panelGrid>
+            </p:tab>
+            <p:tab title="Zarządzaj użytkownikami">
+                <h:panelGrid columns="2" cellpadding="10">
+                    <p:dataTable var="worker" value="#{User.workers}">
+                        <p:column headerText="Id uzytkownika">
+                            <h:outputText value="#{worker.id}" />
+                        </p:column>
+
+                        <p:column headerText="login">
+                            <h:outputText value="#{worker.login}" />
+                        </p:column>
+
+                        <p:column headerText="Imię">
+                            <h:outputText value="#{worker.name}" />
+                        </p:column>
+
+                        <p:column headerText="Nazwisko">
+                            <h:outputText value="#{worker.surname}" />
+                        </p:column>
+
+                        <p:column headerText="Edytuj">
+                            <p:commandButton value = "Edytuj"/>
+                        </p:column>
+                        <p:column headerText="Usuń">
+                            <p:commandButton value = "Usuń"/>
+                        </p:column>
+                    </p:dataTable>
+                </h:panelGrid>
+            </p:tab>
+        </p:tabView>
+    </h:panelGroup>
+    </h:form>
 </h:body>
 
 </html>
