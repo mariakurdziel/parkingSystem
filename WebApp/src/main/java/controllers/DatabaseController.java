@@ -21,8 +21,8 @@ public class DatabaseController {
         EntityManagerFactory factory = Persistence.createEntityManagerFactory("JPA-Zajecia");
         EntityManager em = factory.createEntityManager();
         try {
-           /* Worker w1=new Worker((long)2246,(long)223,"Albert","Camus","albert123",true, "f1863f23897ea9c14d9606d667e84685");
-            Worker w2=new Worker((long)2247,(long)222,"Monika","Szwaja","monia7",false, "f1863f23897ea9c14d9606d667e84685");
+           /* Worker w1=new Worker((long)2246,(long)223,"Albert","Camus","albert123",true, "d54eeafbfc575991c41c863ac095bb15");
+            Worker w2=new Worker((long)2247,(long)222,"Monika","Szwaja","monia7",false, "d54eeafbfc575991c41c863ac095bb15");
             Worker w3=new Worker((long)2248,(long)222,"Teodor","Kowalski","teodorr",false, "f1863f23897ea9c14d9606d667e84685");
             Worker w4=new Worker((long)2249,(long)220,"Milan","Nowak","nowak14",true, "f1863f23897ea9c14d9606d667e84685");
             Worker w5=new Worker((long)2250,(long)222,"Maria","Achmatowa","achmat",false, "f1863f23897ea9c14d9606d667e84685");

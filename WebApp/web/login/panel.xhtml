@@ -21,6 +21,7 @@
     <h:form id="panel">
     <h:outputLabel value="Witaj #{User.user.name}!" />
     <p:commandButton value = "Wyloguj się" style="float: right;" action = "#{User.LogOut}" />
+        <p:commandButton value="Zmień hasło" ajax="false" style="float:right;" action="change.xhmtl?faces-redirect=true"/>
     <p:growl id="msgs" showDetail="true" />
     <br/><br/><br/><br/>
      <h:panelGroup rendered="#{User.render1}">
@@ -65,6 +66,7 @@
     </p:tabView>
      </h:panelGroup>
         <h:panelGroup rendered="#{User.render2}">
+            <p:commandButton value="Zmień hasło innego użytkownika" ajax="false" action="adminchange.xhmtl?faces-redirect=true"/>
         <p:tabView>
             <p:tab title="Twoje dane">
                 <h:panelGrid columns="2" cellpadding="10">

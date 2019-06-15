@@ -46,7 +46,7 @@ public class Worker implements Serializable {
         this.surname=surname;
         this.login=username;
         this.is_admin=admincredentials;
-        this.passwordHash="f1863f23897ea9c14d9606d667e84685";
+        this.passwordHash="d54eeafbfc575991c41c863ac095bb15";
     }
 
 
