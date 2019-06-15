@@ -10,14 +10,25 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://java.sun.com/jsf/html">
+      xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<f:loadBundle basename="messages" var="msg"/>
 
 <h:head>
-    <title>WItaj!</title>
+    <title>Witaj</title>
 </h:head>
 
 <h:body>
     <h:outputLabel value="Witaj #{User.user.name}!" />
+    <h:panelGrid columns = "2">
+        Language :
+        <h:selectOneMenu value = "#{userLanguage.locale}" onchange = "Submit()"
+                         valueChangeListener = "#{userLanguage.localeChanged}">
+            <f:selectItems value = "#{userLanguage.countries}" />
+        </h:selectOneMenu>
+    </h:panelGrid>
+    <h:commandButton value="Submit" />
+    <h:outputText value = "#{msg.greeting}" />
 </h:body>
 
 </html>
