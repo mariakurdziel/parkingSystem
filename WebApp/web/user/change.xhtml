@@ -16,7 +16,7 @@
         <h:outputLabel id="password" value="Nowe hasło:"/>
         <h:inputSecret id="change_password" var = "newPassword" value = "#{passwordController.newPassword}"/>
 
-        <p:commandButton value="Password" action= "#{passwordController.changePassword(User.login, passwordController.newPassword)}"
+        <p:commandButton value="Password" action= "#{passwordController.changePassword(User.user.login, passwordController.newPassword)}"
                             Oncomplete="#{User.setPassword(passwordController.getNewPassword())}" />
     </h:form>
 </h:body>

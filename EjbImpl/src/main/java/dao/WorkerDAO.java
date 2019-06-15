@@ -93,13 +93,16 @@ public class WorkerDAO {
 
     public void changeWorkerPassword(String newLogin, String passwordHash){
         try {
-            String jpql = "SELECT w FROM Worker w WHERE w.login LIKE :newLogin";
-            Worker w = em.createQuery(jpql, Worker.class)
-                    .setParameter("newLogin", newLogin).getSingleResult();
+            Query q = em.createQuery("FROM Worker", Worker.class);
+            workers = q.getResultList();
 
-            em.getTransaction().begin();
-            w.setPasswordHash(passwordHash);
-            em.getTransaction().commit();
+            for (Worker w : workers) {
+                if (w.getLogin().equals(newLogin)){
+                    em.getTransaction().begin();
+                    w.setPasswordHash(passwordHash);
+                    em.getTransaction().commit();
+                }
+            }
 
         }catch(Exception e) {
             em.getTransaction().rollback();
