@@ -1,41 +1,42 @@
 package controllers;
-import ejb.dto.Ticket;
 import ejb.dto.Worker;
 
-import javax.annotation.ManagedBean;
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 import javax.ejb.EJB;
-import javax.enterprise.context.RequestScoped;
+import javax.ejb.TransactionAttribute;
+import javax.ejb.TransactionAttributeType;
 import javax.enterprise.context.SessionScoped;
 import javax.faces.context.FacesContext;
+import javax.inject.Inject;
 import javax.inject.Named;
 import javax.jms.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
-import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.Serializable;
-import java.io.UnsupportedEncodingException;
 import java.security.Principal;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
+//import ejb.interfaces.JMSMessageHandlerManager;
+import ejb.interfaces.JMSHandlerManager;
 import ejb.interfaces.UserManager;
-import ejb.interfaces.remote.UserManagerRemote;
 
 
 @Named("User")
 @SessionScoped
 public class UserController implements Serializable {
 
-    @Resource(mappedName = "java:/jms/MyXaConnectionFactory")
-    private static ConnectionFactory cf;
 
-    @Resource(mappedName="java:jboss/exported/jms/queue/Project")
-    private static Queue queue;
+    private static final Logger LOG = Logger.getLogger(UserController.class.getName());
 
     @EJB
     private UserManager userManagerBean;
+
+    @EJB
+    private JMSHandlerManager jmsHandler;
+
     private static Worker user;
     private static Worker tmp_user;
     private static List<Worker> workers;
@@ -99,30 +100,21 @@ public class UserController implements Serializable {
         return "/login/form.xhtml";
     }
     public String LogOut() {
-        try {
-            Connection conn=cf.createConnection();
-            Session session=conn.createSession(false,Session.AUTO_ACKNOWLEDGE);
-            MessageProducer producer = session.createProducer(queue);
-            TextMessage msg = session.createTextMessage();
-            msg.setStringProperty("Operation","Request");
-            msg.setText("Zaraz nastapi wylogowanie!");
-            producer.send(msg);
-            //new MessageBean().onMessage(msg);
 
-        } catch (JMSException e) {
-            e.printStackTrace();
+        jmsHandler.sendMsg("abc");
+        String resp=jmsHandler.receiveMsg();
+
+            FacesContext fc = FacesContext.getCurrentInstance();
+            HttpServletRequest request = (HttpServletRequest) fc.getExternalContext().getRequest();
+            try {
+                Principal user = request.getUserPrincipal();
+                request.logout();
+            } catch (ServletException e) {
+                e.printStackTrace();
+            }
+            return "/login/panel.xhtml";
         }
 
-        FacesContext fc=FacesContext.getCurrentInstance();
-        HttpServletRequest request= (HttpServletRequest)fc.getExternalContext().getRequest();
-        try {
-            Principal user=request.getUserPrincipal();
-            request.logout();
-        } catch (ServletException e) {
-            e.printStackTrace();
-        }
-         return "/login/panel.xhtml";
-    }
 
     public void getListofUsers(){
 

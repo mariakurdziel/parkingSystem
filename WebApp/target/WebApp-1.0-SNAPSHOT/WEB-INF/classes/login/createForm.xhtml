@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: maria
+  Date: 2019-06-15
+  Time: 20:06
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"  xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>Dodaj użytkownika</title>
+</h:head>
+
+<h:body>
+    <h3>Dodaj użytkownika</h3>
+    <h:form>
+        Id użytkownika:<br/><br/>
+        <h:inputText value="#{User.tmp_user.id}" /><br/><br/>
+        Login użytkownika:<br/><br/>
+        <h:inputText value="#{User.tmp_user.login}" /><br/><br/>
+        Imię użytkownika:<br/><br/>
+        <h:inputText value="#{User.tmp_user.name}" /><br/><br/>
+        Nazwisko użytkownika:<br/><br/>
+        <h:inputText value="#{User.tmp_user.surname}" /><br/><br/>
+        Id parkometru:<br/><br/>
+        <h:inputText value="#{User.tmp_user.meter}" /><br/><br/>
+        Haslo:<br/><br/>
+        <h:inputText value="#{User.tmp_user.passwordHash}" /><br/><br/>
+        <h:selectBooleanCheckbox value="#{User.user.is_admin}" /> Prawa admina<br/><br/>
+        <p:commandButton value="Edytuj" ajax="false"  action="#{User.createUser}"/>
+    </h:form>
+</h:body>
+
+</html>

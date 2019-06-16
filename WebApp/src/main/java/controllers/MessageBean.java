@@ -27,12 +27,9 @@ import javax.xml.bind.SchemaOutputResolver;
 public class MessageBean implements MessageListener {
 
 
-   /* @Resource(mappedName = "java:/jms/MyXaConnectionFactory")
-    private static ConnectionFactory cf;
-*/
-   /* @Resource(mappedName="java:jboss/exported/jms/queue/Project")
-    private Queue queue;
-*/
+    @Inject
+    @JMSConnectionFactory("java:/jms/MyXaConnectionFactory")
+    private JMSContext mdc;
 
 
     @Override
@@ -41,8 +38,21 @@ public class MessageBean implements MessageListener {
         if (message instanceof TextMessage) {
             TextMessage textMessage = (TextMessage) message;
 
+            Destination dest= null;
             try {
-                InitialContext ctx=new InitialContext();
+                dest = message.getJMSDestination();
+                Destination replyToDest=message.getJMSReplyTo();
+                JMSProducer prod=mdc.createProducer();
+                TextMessage resp=mdc.createTextMessage("To jest odpowiedź");
+                resp.setStringProperty("Operation", "Response");
+                prod.send(dest, resp);
+            } catch (JMSException e) {
+                e.printStackTrace();
+            }
+
+
+           /* try {
+               /* InitialContext ctx=new InitialContext();
                 QueueConnectionFactory f=(QueueConnectionFactory)ctx.lookup("/jms/MyXaConnectionFactory");
                 Connection conn=f.createConnection();
                 Session session=conn.createSession(false,Session.AUTO_ACKNOWLEDGE);
@@ -63,6 +73,7 @@ public class MessageBean implements MessageListener {
                 e.printStackTrace();
             }
 
+        }*/
         }
     }
 }

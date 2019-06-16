@@ -14,7 +14,6 @@ import java.util.List;
 @Stateless
 public class UserManagerBean implements UserManager, Serializable {
 
-    private static String MSG;
 
     @Override
     public void changePassword(String login, String passwordHash){
@@ -76,11 +75,4 @@ public class UserManagerBean implements UserManager, Serializable {
         return dao.getWorkers();
     }
 
-    public static String getMSG() {
-        return MSG;
-    }
-
-    public static void setMSG(String MSG) {
-        UserManagerBean.MSG = MSG;
-    }
 }
