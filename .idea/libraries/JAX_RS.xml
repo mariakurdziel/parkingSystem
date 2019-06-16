@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="JAX-RS" type="JAX-RS">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../resteasy-jaxrs-3.6.3.Final-all.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

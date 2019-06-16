@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="jbosssx-3.0.0.Final1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../jbosssx-3.0.0.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../picketbox-bare-3.0.0.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

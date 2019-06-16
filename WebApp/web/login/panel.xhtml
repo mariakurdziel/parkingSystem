@@ -20,7 +20,7 @@
 <h:body>
     <h:form id="panel">
     <h:outputLabel value="Witaj #{User.user.name}!" />
-    <p:commandButton value = "Wyloguj się" style="float: right;" action = "#{User.LogOut}" />
+    <p:commandButton value = "Wyloguj się" ajax="false" style="float: right;" action = "#{User.LogOut}" />
     <p:growl id="msgs" showDetail="true" />
     <br/><br/><br/><br/>
      <h:panelGroup rendered="#{User.render1}">
@@ -31,7 +31,8 @@
                 <h:outputText value="Login użytkownika: #{User.user.login}" /><br/>
                 <h:outputText value="Imię użytkownika: #{User.user.name}" /><br/>
                 <h:outputText value="Nazwisko użytkownika: #{User.user.surname}" /><br/>
-                <h:outputText value="Id parkometru: #{User.user.meter}" /><br/>
+                <h:outputText value="Id parkometru: #{User.user.meter}" /><br/><br/>
+                <p:commandButton value="Zmień hasło" ajax="false" style="float:right;" action="change.xhmtl?faces-redirect=true"/>
             </h:panelGrid>
         </p:tab>
         <p:tab title="Parking">
@@ -72,7 +73,8 @@
                     <h:outputText value="Login użytkownika: #{User.user.login}" /><br/>
                     <h:outputText value="Imię użytkownika: #{User.user.name}" /><br/>
                     <h:outputText value="Nazwisko użytkownika: #{User.user.surname}" /><br/>
-                    <h:outputText value="Id parkometru: #{User.user.meter}" /><br/>
+                    <h:outputText value="Id parkometru: #{User.user.meter}" /><br/><br/>
+                    <p:commandButton value="Zmień hasło" ajax="false" style="float:right;" action="change.xhmtl?faces-redirect=true"/>
                 </h:panelGrid>
             </p:tab>
             <p:tab title="Parking">
@@ -123,12 +125,14 @@
                         </p:column>
 
                         <p:column headerText="Edytuj">
-                            <p:commandButton value = "Edytuj"/>
+                            <p:commandButton value = "Edytuj"  ajax="false" style="float:right;" action="#{User.redirectToForm1(worker)}"/>
                         </p:column>
                         <p:column headerText="Usuń">
-                            <p:commandButton value = "Usuń"/>
+                            <p:commandButton value = "Usuń" ajax="false" style="float:right;" action="#{User.deleteUser(worker.id)}"/>
                         </p:column>
                     </p:dataTable>
+                    <br/>
+                    <p:commandButton value = "Dodaj" ajax="false" action="#{User.redirectToForm2}"/>
                 </h:panelGrid>
             </p:tab>
         </p:tabView>

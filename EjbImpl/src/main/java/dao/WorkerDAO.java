@@ -62,8 +62,13 @@ public class WorkerDAO {
             Worker foundWorker = em.find(Worker.class, worker.getId());
 
             em.getTransaction().begin();
+            foundWorker.setLogin(worker.getLogin());
             foundWorker.setName(worker.getName());
             foundWorker.setSurname(worker.getSurname());
+            foundWorker.setId(worker.getId());
+            foundWorker.setMeter(worker.getMeter());
+            foundWorker.setIs_admin(worker.isIs_admin());
+            foundWorker.setPasswordHash(worker.getPasswordHash());
             em.getTransaction().commit();
         }  catch(Exception e) {
             em.getTransaction().rollback();
@@ -74,7 +79,7 @@ public class WorkerDAO {
     public static Worker getWorkerById(Long id){
         System.out.println("jestemtu");
         System.out.println( em.find(Worker.class,id));
-    return em.find(Worker.class,id);
+        return em.find(Worker.class,id);
     }
 
     public Worker getWorkerbyLogin(String login) {
@@ -82,13 +87,34 @@ public class WorkerDAO {
         Query q = em.createQuery("FROM Worker", Worker.class);
         workers = q.getResultList();
 
-            for (Worker w : workers) {
-                if (w.getLogin().equals(login))
-                    return w;
-            }
+        for (Worker w : workers) {
+            if (w.getLogin().equals(login))
+                return w;
+        }
 
 
         return null;
+    }
+
+    public void changeWorkerPassword(String newLogin, String passwordHash){
+        try {
+            Query q = em.createQuery("FROM Worker", Worker.class);
+            workers = q.getResultList();
+
+            for (Worker w : workers) {
+                if (w.getLogin().equals(newLogin)){
+                    em.getTransaction().begin();
+                    w.setPasswordHash(passwordHash);
+                    w = em.merge(w);
+                    em.getTransaction().commit();
+                }
+            }
+
+        }catch(Exception e) {
+            em.getTransaction().rollback();
+            System.err.println("Error when trying to change password: " + e + "\n" + newLogin);
+
+        }
     }
 
     public List<Worker> getWorkers() {

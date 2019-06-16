@@ -8,51 +8,74 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87a0ee4b-d8b2-4694-9ade-de3c24177c01" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/PrimeFaces_6_1__2_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EjbApi/src/main/java/ejb/interfaces/ParkingMeterManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EjbApi/src/main/java/ejb/interfaces/remote/ParkingMeterManagerRemote.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EjbApi/target/classes/ejb/interfaces/ParkingMeterManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EjbApi/target/classes/ejb/interfaces/remote/ParkingMeterManagerRemote.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EjbImpl/src/main/java/ejb/ParkingMeterManagerBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EjbImpl/target/EjbImpl-1.0-SNAPSHOT/WEB-INF/classes/ejb/ParkingMeterManagerBean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EjbImpl/target/classes/ejb/ParkingMeterManagerBean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApp/src/main/java/controllers/ParkingMeterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/WEB-INF/classes/controllers/ParkingMeterController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApp/target/classes/controllers/ParkingMeterController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_0_33_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_artemis_commons_1_1_0_wildfly_017.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_artemis_core_client_1_1_0_wildfly_017.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_artemis_hqclient_protocol_1_1_0_wildfly_017.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_artemis_jms_client_1_1_0_wildfly_017.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_artemis_journal_1_1_0_wildfly_017.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_artemis_native_1_1_0_wildfly_017.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_artemis_selector_1_1_0_wildfly_017.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jboss_ejb_client_2_0_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jboss_remote_naming_2_0_4_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_marshalling_jboss_marshalling_1_4_11_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_marshalling_jboss_marshalling_river_1_4_11_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_remoting_jboss_remoting_4_0_21_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_sasl_jboss_sasl_1_0_5_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_jms_jboss_jms_api_2_0_spec_1_0_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_xnio_xnio_api_3_4_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_xnio_xnio_nio_3_4_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jgroups_jgroups_3_6_10_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_7_jbossorg_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7_jbossorg_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_checkstyle_wildfly_checkstyle_config_1_0_4_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_wildfly_common_wildfly_common_1_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jbosssx_3_0_0_Final1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/src/main/java/controllers/MessageBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/web/login/adminchange.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/web/login/change.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/web/login/createForm.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/web/login/form.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/EjbImpl_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/EjbImpl_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/WebApp_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/WebApp_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jboss_security_spi_3_0_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jbosssx_3_0_0_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jbosssx_3_0_0_Final.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EjbApi/src/main/java/ejb/dto/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/EjbApi/src/main/java/ejb/dto/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EjbApi/EjbApi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EjbApi/EjbApi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EjbApi/src/main/java/ejb/dto/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/EjbApi/src/main/java/ejb/dto/Worker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EjbApi/src/main/java/ejb/interfaces/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/EjbApi/src/main/java/ejb/interfaces/UserManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EjbApi/target/classes/ejb/dto/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/EjbApi/target/classes/ejb/dto/Ticket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EjbApi/target/classes/ejb/dto/Worker.class" beforeDir="false" afterPath="$PROJECT_DIR$/EjbApi/target/classes/ejb/dto/Worker.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EjbApi/target/classes/ejb/interfaces/UserManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/EjbApi/target/classes/ejb/interfaces/UserManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EjbImpl/src/main/java/dao/TicketDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/EjbImpl/src/main/java/dao/TicketDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EjbImpl/EjbImpl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EjbImpl/EjbImpl.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EjbImpl/src/main/java/dao/WorkerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/EjbImpl/src/main/java/dao/WorkerDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EjbImpl/src/main/java/ejb/UserManagerBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/EjbImpl/src/main/java/ejb/UserManagerBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EjbImpl/target/EjbImpl-1.0-SNAPSHOT/WEB-INF/classes/dao/TicketDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/EjbImpl/target/EjbImpl-1.0-SNAPSHOT/WEB-INF/classes/dao/TicketDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EjbImpl/target/EjbImpl-1.0-SNAPSHOT/WEB-INF/classes/dao/WorkerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/EjbImpl/target/EjbImpl-1.0-SNAPSHOT/WEB-INF/classes/dao/WorkerDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EjbImpl/target/EjbImpl-1.0-SNAPSHOT/WEB-INF/classes/ejb/UserManagerBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/EjbImpl/target/EjbImpl-1.0-SNAPSHOT/WEB-INF/classes/ejb/UserManagerBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EjbImpl/target/EjbImpl-1.0-SNAPSHOT/WEB-INF/lib/EjbApi-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/EjbImpl/target/EjbImpl-1.0-SNAPSHOT/WEB-INF/lib/EjbApi-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EjbImpl/target/classes/dao/TicketDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/EjbImpl/target/classes/dao/TicketDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EjbImpl/target/classes/dao/WorkerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/EjbImpl/target/classes/dao/WorkerDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EjbImpl/target/classes/ejb/UserManagerBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/EjbImpl/target/classes/ejb/UserManagerBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SOA_Parkometr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SOA_Parkometr.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp/WebApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/WebApp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/controllers/DatabaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/controllers/DatabaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/WEB-INF/classes/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/WEB-INF/classes/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/WEB-INF/classes/controllers/DatabaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/WEB-INF/classes/controllers/DatabaseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/controllers/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/WEB-INF/classes/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/WEB-INF/classes/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/WEB-INF/classes/dodaj.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/WEB-INF/classes/dodaj.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/WEB-INF/classes/login/panel.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/WEB-INF/classes/login/panel.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/WEB-INF/lib/EjbApi-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/WEB-INF/lib/EjbApi-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/WEB-INF/lib/EjbImpl-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/WEB-INF/lib/EjbImpl-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/dodaj.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/dodaj.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/login/panel.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/login/panel.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/target/classes/META-INF/WebApp.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/target/classes/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/target/classes/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/target/classes/controllers/DatabaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/target/classes/controllers/DatabaseController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp/target/classes/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/target/classes/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/target/classes/dodaj.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/target/classes/dodaj.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp/target/classes/login/panel.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/target/classes/login/panel.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/web/dodaj.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/web/dodaj.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp/web/login/panel.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/web/login/panel.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -84,97 +107,80 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WebApp/src/main/java/controllers/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EjbImpl/src/main/java/ejb/UserManagerBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="60" column="5" selection-start-line="57" selection-start-column="43" selection-end-line="60" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EjbImpl/src/main/java/dao/WorkerDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="635">
-              <caret line="95" column="5" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#0#11#1" expanded="true" />
-                <element signature="e#0#11#1" expanded="true" />
-                <element signature="e#2745#2746#0" expanded="true" />
-                <element signature="e#2775#2776#0" expanded="true" />
-                <element signature="e#2827#2828#0" expanded="true" />
-                <element signature="e#2865#2866#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebApp/src/main/java/controllers/ParkingMeterController.java">
+        <entry file="file://$PROJECT_DIR$/WebApp/web/login/createForm.xhtml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EjbApi/src/main/resources/META-INF/persistence.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebApp/src/main/java/controllers/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1360">
+              <caret line="102" selection-start-line="102" selection-end-line="102" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1837#1838#0" expanded="true" />
-                <element signature="e#1867#1868#0" expanded="true" />
-                <element signature="e#1919#1920#0" expanded="true" />
-                <element signature="e#1957#1958#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebApp/web/login/panel.xhtml">
+        <entry file="file://$PROJECT_DIR$/WebApp/src/main/java/controllers/MessageBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="128" column="54" lean-forward="true" selection-start-line="128" selection-start-column="54" selection-end-line="128" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EjbImpl/src/main/java/dao/TicketDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="14" column="51" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="57" />
+            <state relative-caret-position="282">
+              <caret line="48" column="65" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2619#2620#0" expanded="true" />
-                <element signature="e#2649#2650#0" expanded="true" />
-                <element signature="e#2708#2709#0" expanded="true" />
-                <element signature="e#2751#2752#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EjbApi/src/main/java/ejb/interfaces/ParkingMeterManager.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EjbImpl/src/main/java/rest/TicketServices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebApp/web/dodaj.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="38" column="21" selection-start-line="28" selection-start-column="7" selection-end-line="38" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebApp/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -182,20 +188,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EjbApi/src/main/java/ejb/interfaces/UserManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="35" />
+            <state relative-caret-position="119">
+              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EjbApi/src/main/java/ejb/exceptions/InvalidLoginCredentialsException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -206,8 +203,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="XHTML File" />
-        <option value="facelets" />
         <option value="jsf" />
+        <option value="Singleton" />
+        <option value="facelets" />
         <option value="Class" />
       </list>
     </option>
@@ -240,19 +238,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/EjbApi/src/main/java/ejb/dto/User.java" />
-        <option value="$PROJECT_DIR$/WebApp/web/logging.xhtml" />
-        <option value="$PROJECT_DIR$/WebApp/web/mainpage.xhtml" />
-        <option value="$PROJECT_DIR$/EjbApi/src/main/java/exceptions/InvalidLoginCredentialsException.java" />
-        <option value="$PROJECT_DIR$/EjbApi/src/main/java/dto/Worker.java" />
-        <option value="$PROJECT_DIR$/EjbApi/src/main/java/interfaces/UserManager.java" />
         <option value="$PROJECT_DIR$/EjbApi/src/main/java/interfaces/remote/UserManagerRemote.java" />
         <option value="$PROJECT_DIR$/EjbImpl/src/main/java/dao/ParkingMeterDAO.java" />
         <option value="$PROJECT_DIR$/EjbImpl/src/main/java/dao/ParkingSpotDAO.java" />
         <option value="$PROJECT_DIR$/WebApp/web/error.xhtml" />
         <option value="$PROJECT_DIR$/WebApp/src/main/java/controllers/Authentication.java" />
         <option value="$PROJECT_DIR$/WebApp/web/loginproxy.xhtml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/WebApp/web/index.xhtml" />
         <option value="$PROJECT_DIR$/WebApp/WebApp.iml" />
         <option value="$PROJECT_DIR$/WebApp/web/logged/web.xml" />
@@ -262,20 +253,16 @@
         <option value="$PROJECT_DIR$/EjbApi/src/main/java/ejb/interfaces/remote/UserManagerRemote.java" />
         <option value="$PROJECT_DIR$/EjbApi/pom.xml" />
         <option value="$PROJECT_DIR$/WebApp/web/WEB-INF/jboss-web.xml" />
-        <option value="$PROJECT_DIR$/WebApp/web/login.xhtml" />
         <option value="$PROJECT_DIR$/WebApp/web/login.jsp" />
         <option value="$PROJECT_DIR$/WebApp/web/login3.xhtml" />
         <option value="$PROJECT_DIR$/WebApp/web/panel.xhtml" />
         <option value="$PROJECT_DIR$/WebApp/src/main/java/controllers/Database.java" />
-        <option value="$PROJECT_DIR$/EjbApi/src/main/java/ejb/dto/Worker.java" />
         <option value="$PROJECT_DIR$/WebApp/web/login2.xhtml" />
-        <option value="$PROJECT_DIR$/WebApp/web/dodaj.xhtml" />
         <option value="$PROJECT_DIR$/EjbApi/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/EjbApi/src/main/java/ejb/dto/ParkingSpot.java" />
         <option value="$PROJECT_DIR$/EjbApi/src/main/java/ejb/dto/ParkingMeter.java" />
         <option value="$PROJECT_DIR$/WebApp/src/main/java/controllers/MenuView.java" />
         <option value="$PROJECT_DIR$/WebApp/web/login/panel2.xhtml" />
-        <option value="$PROJECT_DIR$/WebApp/pom.xml" />
         <option value="$PROJECT_DIR$/WebApp/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/WebApp/web/panel2.xhtml" />
         <option value="$PROJECT_DIR$/WebApp/src/main/java/controllers/PanelController.java" />
@@ -286,11 +273,22 @@
         <option value="$PROJECT_DIR$/EjbApi/src/main/java/ejb/interfaces/ParkingMeterManager.java" />
         <option value="$PROJECT_DIR$/EjbImpl/src/main/java/ejb/ParkingMeterManagerBean.java" />
         <option value="$PROJECT_DIR$/WebApp/src/main/java/controllers/ParkingMeterController.java" />
+        <option value="$PROJECT_DIR$/WebApp/web/login.xhtml" />
+        <option value="$PROJECT_DIR$/WebApp/web/login/changeadmin.xhtml" />
+        <option value="$PROJECT_DIR$/WebApp/web/login/change.xhtml" />
         <option value="$PROJECT_DIR$/EjbApi/src/main/java/ejb/interfaces/UserManager.java" />
-        <option value="$PROJECT_DIR$/EjbImpl/src/main/java/dao/WorkerDAO.java" />
         <option value="$PROJECT_DIR$/EjbImpl/src/main/java/ejb/UserManagerBean.java" />
+        <option value="$PROJECT_DIR$/EjbImpl/src/main/java/dao/WorkerDAO.java" />
+        <option value="$PROJECT_DIR$/WebApp/web/login/form.xhtml" />
         <option value="$PROJECT_DIR$/WebApp/web/login/panel.xhtml" />
+        <option value="$PROJECT_DIR$/WebApp/web/login/createForm.xhtml" />
+        <option value="$PROJECT_DIR$/EjbApi/src/main/java/ejb/dto/Worker.java" />
+        <option value="$PROJECT_DIR$/WebApp/src/main/java/controllers/PasswordController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/WebApp/pom.xml" />
+        <option value="$PROJECT_DIR$/WebApp/web/dodaj.xhtml" />
         <option value="$PROJECT_DIR$/WebApp/src/main/java/controllers/UserController.java" />
+        <option value="$PROJECT_DIR$/WebApp/src/main/java/controllers/MessageBean.java" />
       </list>
     </option>
   </component>
@@ -330,8 +328,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="31" />
+    <option name="y" value="164" />
     <option name="width" value="1376" />
     <option name="height" value="728" />
   </component>
@@ -341,6 +340,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -434,16 +434,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parkingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parkingSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="EjbImpl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ejb" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="parkingSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -486,25 +477,10 @@
               <item name="WebApp" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="parkingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parkingSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="WebApp" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parkingSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parkingSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="WebApp" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -515,15 +491,22 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="XHTML" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/EjbApi/src/main/java/exceptions" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../picketbox-bare-3.0.0.Final.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="experimental" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\maria\Desktop\SOA\parkingSystem\WebApp\web" />
+      <recent name="C:\Users\maria\Desktop\SOA\parkingSystem\WebApp\web\login" />
+      <recent name="$PROJECT_DIR$/WebApp/web/logged" />
+      <recent name="C:\Users\maria\SOA_Parkometr\WebApp\web\admin" />
+      <recent name="C:\Users\maria\SOA_Parkometr\EjbApi\src\main\java" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -531,13 +514,6 @@
       <recent name="C:\Users\maria\Desktop\SOA\parkingSystem\WebApp\web" />
       <recent name="$PROJECT_DIR$/WebApp/web/logged" />
       <recent name="C:\Users\maria\SOA_Parkometr\WebApp\web\user" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\maria\Desktop\SOA\parkingSystem\WebApp\web\login" />
-      <recent name="C:\Users\maria\Desktop\SOA\parkingSystem\WebApp\web" />
-      <recent name="$PROJECT_DIR$/WebApp/web/logged" />
-      <recent name="C:\Users\maria\SOA_Parkometr\WebApp\web\admin" />
-      <recent name="C:\Users\maria\SOA_Parkometr\EjbApi\src\main\java" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -744,7 +720,35 @@
       <workItem from="1560556556949" duration="1770000" />
       <workItem from="1560558541178" duration="1765000" />
       <workItem from="1560560368607" duration="1070000" />
-      <workItem from="1560561605900" duration="479000" />
+      <workItem from="1560561605900" duration="610000" />
+      <workItem from="1560587892615" duration="1774000" />
+      <workItem from="1560589720218" duration="1783000" />
+      <workItem from="1560591618511" duration="1702000" />
+      <workItem from="1560597914950" duration="1629000" />
+      <workItem from="1560599980567" duration="1733000" />
+      <workItem from="1560602268316" duration="1529000" />
+      <workItem from="1560604140457" duration="334000" />
+      <workItem from="1560604982387" duration="939000" />
+      <workItem from="1560606126274" duration="1556000" />
+      <workItem from="1560608352144" duration="908000" />
+      <workItem from="1560609719520" duration="396000" />
+      <workItem from="1560610426209" duration="1226000" />
+      <workItem from="1560612298665" duration="52000" />
+      <workItem from="1560617915502" duration="1601000" />
+      <workItem from="1560619616889" duration="1775000" />
+      <workItem from="1560621454178" duration="1787000" />
+      <workItem from="1560623341678" duration="1764000" />
+      <workItem from="1560625396047" duration="1754000" />
+      <workItem from="1560627370206" duration="1771000" />
+      <workItem from="1560629215183" duration="1783000" />
+      <workItem from="1560631064173" duration="1762000" />
+      <workItem from="1560633078291" duration="1811000" />
+      <workItem from="1560635115445" duration="1762000" />
+      <workItem from="1560636944978" duration="1765000" />
+      <workItem from="1560638822884" duration="1764000" />
+      <workItem from="1560640652349" duration="1763000" />
+      <workItem from="1560642593825" duration="1332000" />
+      <workItem from="1560669375166" duration="1074000" />
     </task>
     <task id="LOCAL-00001" summary="Project Structure">
       <created>1559500449774</created>
@@ -788,11 +792,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560561985811</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Panels for admin and regular user are done!">
+      <created>1560562115868</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1560562115868</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134714000" />
+    <option name="totallyTimeSpent" value="175888000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -804,9 +815,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1376" height="728" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22426471" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25841874" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Persistence" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -817,8 +828,8 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329653" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.9027182" visible="true" weight="0.39805827" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.42718446" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.9027182" weight="0.45425868" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38643533" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.1388889" />
@@ -832,7 +843,7 @@
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.32882273" />
       <window_info anchor="bottom" id="ANTLR Preview" order="16" />
-      <window_info anchor="bottom" id="Messages" order="17" sideWeight="0.4892704" weight="0.26213592" />
+      <window_info anchor="bottom" id="Messages" order="17" sideWeight="0.4892704" weight="0.20031546" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -848,7 +859,7 @@
       <window_info anchor="right" id="RestServices" order="12" weight="0.3297568" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.22426471" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22327965" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Persistence" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -859,8 +870,8 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329653" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.9027182" visible="true" weight="0.39805827" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.42718446" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.9027182" visible="true" weight="0.37066245" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4368932" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.1388889" />
@@ -874,7 +885,7 @@
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.32882273" />
       <window_info anchor="bottom" id="ANTLR Preview" order="16" />
-      <window_info anchor="bottom" id="Messages" order="17" sideWeight="0.4892704" weight="0.26213592" />
+      <window_info anchor="bottom" id="Messages" order="17" sideWeight="0.4892704" weight="0.26182964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -904,20 +915,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/WebApp/src/main/java/controllers/ParkingMeterController.java</url>
-          <line>36</line>
+          <url>file://$PROJECT_DIR$/WebApp/src/main/java/controllers/UserController.java</url>
+          <line>102</line>
           <properties />
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/EjbImpl/src/main/java/ejb/UserManagerBean.java</url>
-          <line>59</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/EjbImpl/src/main/java/dao/WorkerDAO.java</url>
-          <line>26</line>
+          <url>file://$PROJECT_DIR$/WebApp/src/main/java/controllers/MessageBean.java</url>
+          <line>41</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
@@ -929,36 +934,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/out/artifacts/Parkometr_war_exploded/index.xhtml" />
-    <entry file="file://$PROJECT_DIR$/SOA_Parkometr.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285">
-          <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/WebApp.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-637">
-          <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/web/logged/web.xml" />
-    <entry file="file://$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/WEB-INF/classes/login.xhtml" />
-    <entry file="file://$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/WEB-INF/classes/error.xhtml" />
-    <entry file="file://$PROJECT_DIR$/WebApp/target/WebApp-1.0-SNAPSHOT/WEB-INF/classes/loginproxy.xhtml" />
-    <entry file="file://$PROJECT_DIR$/WebApp/src/main/java/controllers/Authentication.java" />
-    <entry file="file://$PROJECT_DIR$/WebApp/web/logged/login.xhtml" />
-    <entry file="file://$PROJECT_DIR$/WebApp/web/logged/error.xhtml" />
-    <entry file="file://$PROJECT_DIR$/WebApp/web/loginproxy.xhtml" />
     <entry file="file://$PROJECT_DIR$/WebApp/web/user/index.xhtml" />
     <entry file="file://$PROJECT_DIR$/WebApp/web/logged/index.xhtml" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/persistence_2_0.xsd">
@@ -978,13 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/web/WEB-INF/beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EjbApi/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -993,24 +961,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/web/login.jsp" />
-    <entry file="file://$PROJECT_DIR$/WebApp/web/WEB-INF/jboss-web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.oss.jboss.editor.JBossWebRootProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/web/login.xhtml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/web/dodaj.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EjbImpl/src/main/java/dao/ParkingSpotDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1035,27 +985,6 @@
     <entry file="file://$PROJECT_DIR$/WebApp/web/login/panel2.xhtml" />
     <entry file="file://$PROJECT_DIR$/WebApp/src/main/java/controllers/PanelController.java" />
     <entry file="file://$PROJECT_DIR$/WebApp/web/panel2.xhtml" />
-    <entry file="file://$PROJECT_DIR$/WebApp/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EjbApi/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="95" selection-start-line="15" selection-start-column="95" selection-end-line="15" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/src/main/java/controllers/DatabaseController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
@@ -1072,20 +1001,6 @@
           <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EjbApi/src/main/java/ejb/dto/Worker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1597#1598#0" expanded="true" />
-            <element signature="e#1625#1626#0" expanded="true" />
-            <element signature="e#1665#1666#0" expanded="true" />
-            <element signature="e#1699#1700#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1146,20 +1061,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EjbImpl/src/main/java/ejb/UserManagerBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="60" column="5" selection-start-line="57" selection-start-column="43" selection-end-line="60" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/src/main/java/controllers/ParkingMeterController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="218">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1837#1838#0" expanded="true" />
@@ -1167,6 +1072,29 @@
             <element signature="e#1919#1920#0" expanded="true" />
             <element signature="e#1957#1958#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/src/main/java/controllers/TestBean.java" />
+    <entry file="file://$PROJECT_DIR$/WebApp/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/web/WEB-INF/beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/web/WEB-INF/jboss-web.xml">
+      <provider editor-type-id="com.intellij.javaee.oss.jboss.editor.JBossWebRootProvider" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1194,16 +1122,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EjbApi/src/main/java/ejb/interfaces/UserManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EjbApi/src/main/java/ejb/exceptions/InvalidLoginCredentialsException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1211,36 +1129,164 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApp/web/login/panel.xhtml">
+    <entry file="file://$PROJECT_DIR$/WebApp/web/login/change.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="128" column="54" lean-forward="true" selection-start-line="128" selection-start-column="54" selection-end-line="128" selection-end-column="54" />
+        <state relative-caret-position="323">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/web/login/adminchange.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/html_basic.taglib.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/web/login.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EjbImpl/src/main/java/ejb/UserManagerBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+          <folding>
+            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#828#829#0" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/src/main/java/controllers/PasswordController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EjbApi/src/main/java/ejb/dto/Worker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EjbImpl/src/main/java/dao/WorkerDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="95" column="5" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
+        <state relative-caret-position="1071">
+          <caret line="70" column="64" selection-start-line="70" selection-start-column="64" selection-end-line="70" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/web/login/panel.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2278">
+          <caret line="134" column="92" selection-start-line="134" selection-start-column="92" selection-end-line="134" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/web/login/form.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="38" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/Throwable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="633" selection-start-line="633" selection-end-line="633" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#0#11#1" expanded="true" />
-            <element signature="e#0#11#1" expanded="true" />
-            <element signature="e#2745#2746#0" expanded="true" />
-            <element signature="e#2775#2776#0" expanded="true" />
-            <element signature="e#2827#2828#0" expanded="true" />
-            <element signature="e#2865#2866#0" expanded="true" />
+            <element signature="e#26265#26266#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/web/login/createForm.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EjbApi/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebApp/src/main/java/controllers/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+        <state relative-caret-position="1360">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/web/dodaj.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="21" selection-start-line="28" selection-start-column="7" selection-end-line="38" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EjbApi/src/main/java/ejb/interfaces/UserManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApp/src/main/java/controllers/MessageBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="48" column="65" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EjbImpl/src/main/java/rest/TicketServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1322,7 +1368,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>postgresql-42.2.5</last-edited>
+          <last-edited>jbosssx-3.0.0.Final</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
