@@ -50,7 +50,7 @@ public class TicketDAO {
 
     }
 
-    public static void addTicket(Ticket t) {
+    public void addTicket(Ticket t) {
         try {
             DAO.add(t,em);
         }  catch(Exception e) {

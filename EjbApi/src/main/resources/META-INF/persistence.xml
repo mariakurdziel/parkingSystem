@@ -8,6 +8,7 @@
         <class>ejb.dto.Ticket</class>
         <class>ejb.dto.ParkingMeter</class>
         <class>ejb.dto.ParkingSpot</class>
+        <class>ejb.dto.Notification</class>
         <properties>
             <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/baza"/>
             <property name="hibernate.connection.username" value="maria"/>

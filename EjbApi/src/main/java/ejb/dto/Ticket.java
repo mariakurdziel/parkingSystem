@@ -15,11 +15,6 @@ public class Ticket {
     @Column(name="parking_spot",nullable=false)
     private long spot_id;
 
-
-   @ManyToOne(cascade=CascadeType.ALL)
-    @JoinColumn(name = "spot_id")
-    private ParkingSpot spot;
-
     @Column(name="price",nullable=false)
     private double price;
 
@@ -43,13 +38,7 @@ public class Ticket {
         this.id = id;
     }
 
-   public ParkingSpot getSpot() {
-        return spot;
-    }
 
-    public void setSpot(ParkingSpot spot) {
-        this.spot = spot;
-    }
 
     public double getPrice() {
         return price;

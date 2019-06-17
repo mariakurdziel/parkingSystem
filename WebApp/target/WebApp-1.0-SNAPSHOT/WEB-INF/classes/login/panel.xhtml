@@ -35,7 +35,31 @@
                 <p:commandButton value="Zmień hasło" ajax="false" style="float:right;" action="change.xhmtl?faces-redirect=true"/>
             </h:panelGrid>
         </p:tab>
-        <p:tab title="Parking">
+        <p:tab title="Bilety">
+            <h:panelGrid columns="2" cellpadding="10">
+                <h:outputText value="Id parkingu: #{Parking.parking.id}" /><br/>
+                <h:outputText value="Adres parkingu: #{Parking.parking.location}" /><br/>
+                <h:outputText value="Bilety:"/><br/>
+                <p:dataTable var="ticket" value="#{Parking.tickets}">
+                    <p:column headerText="Id biletu">
+                        <h:outputText value="#{ticket.id}" />
+                    </p:column>
+
+                    <p:column headerText="Cena biletu">
+                        <h:outputText value="#{ticket.price}" />
+                    </p:column>
+
+                    <p:column headerText="Wygasa">
+                        <h:outputText value="#{ticket.duration}" />
+                    </p:column>
+
+                    <p:column headerText="Numer rejestracyjny samochodu">
+                        <h:outputText value="#{ticket.registration_number}" />
+                    </p:column>
+                </p:dataTable>
+            </h:panelGrid>
+        </p:tab>
+        <p:tab title="Bilety">
             <h:panelGrid columns="2" cellpadding="10">
                 <h:outputText value="Id parkingu: #{Parking.parking.id}" /><br/>
                 <h:outputText value="Adres parkingu: #{Parking.parking.location}" /><br/>
@@ -63,6 +87,40 @@
                 </p:dataTable>
             </h:panelGrid>
         </p:tab>
+        <p:tab title="Miejsca parkingowe">
+            <h:panelGrid columns="2" cellpadding="10">
+                <p:dataTable id="table" var="spot" rowIndexVar="idx" value="#{Parking.spots}">
+                    <p:column headerText="Id miejsca">
+                        <h:outputText value="#{spot.id}" />
+                    </p:column>
+
+                    <p:column headerText="Opłacony">
+                        <h:outputText value="#{spot.is_paid}" />
+                    </p:column>
+
+                    <p:column headerText="Zajęty">
+                        <h:outputText value="#{spot.reserved}" />
+                    </p:column>
+
+                    <p:column headerText="Czas rozpoczecia">
+                        <h:outputText value="#{spot.start_time}" />
+                    </p:column>
+
+                    <p:column headerText="Czas trwania">
+                        <h:outputText value="#{spot.duration}" />
+                    </p:column>
+                    <p:column headerText="Wjazd">
+                        <p:commandButton value = "Zarejestruj wjazd"  update="@form:table:@row(#{idx})" ajax="true" actionListener="#{Spot.reserve(spot)}" />
+                    </p:column>
+                    <p:column headerText="Opłata">
+                        <p:commandButton value = "Nalicz opłatę"  ajax="false" action="#{Spot.pay(spot)}" />
+                    </p:column>
+                    <p:column headerText="Wyjazd">
+                        <p:commandButton value = "Zarejestruj wyjazd"  ajax="false" action="#{Spot.free(spot)}" />
+                    </p:column>
+                </p:dataTable>
+            </h:panelGrid>
+        </p:tab>
     </p:tabView>
      </h:panelGroup>
         <h:panelGroup rendered="#{User.render2}">
@@ -77,7 +135,7 @@
                     <p:commandButton value="Zmień hasło" ajax="false" style="float:right;" action="change.xhmtl?faces-redirect=true"/>
                 </h:panelGrid>
             </p:tab>
-            <p:tab title="Parking">
+            <p:tab title="Bilety">
                 <h:panelGrid columns="2" cellpadding="10">
                     <h:outputText value="Id parkingu: #{Parking.parking.id}" /><br/>
                     <h:outputText value="Adres parkingu: #{Parking.parking.location}" /><br/>
@@ -133,6 +191,40 @@
                     </p:dataTable>
                     <br/>
                     <p:commandButton value = "Dodaj" ajax="false" action="#{User.redirectToForm2}"/>
+                </h:panelGrid>
+            </p:tab>
+            <p:tab title="Miejsca parkingowe">
+                <h:panelGrid columns="2" cellpadding="10">
+                    <p:dataTable var="spot" value="#{Parking.spots}">
+                        <p:column headerText="Id miejsca">
+                            <h:outputText value="#{spot.id}" />
+                        </p:column>
+
+                        <p:column headerText="Opłacony">
+                            <h:outputText value="#{spot.is_paid}" />
+                        </p:column>
+
+                        <p:column headerText="Zajęty">
+                            <h:outputText value="#{spot.reserved}" />
+                        </p:column>
+
+                        <p:column headerText="Czas rozpoczecia">
+                            <h:outputText value="#{spot.start_time}" />
+                        </p:column>
+
+                        <p:column headerText="Czas trwania">
+                            <h:outputText value="#{spot.duration}" />
+                        </p:column>
+                        <p:column headerText="Wjazd">
+                            <p:commandButton value = "Zarejestruj wjazd"  ajax="false" action="#{Spot.reserve(spot)}" />
+                        </p:column>
+                        <p:column headerText="Opłata">
+                        <p:commandButton value = "Nalicz opłatę"  ajax="false" action="#{Spot.pay(spot)}" />
+                    </p:column>
+                        <p:column headerText="Wyjazd">
+                            <p:commandButton value = "Zarejestruj wyjazd"  ajax="false" action="#{Spot.free(spot)}" />
+                        </p:column>
+                    </p:dataTable>
                 </h:panelGrid>
             </p:tab>
         </p:tabView>

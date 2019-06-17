@@ -49,7 +49,29 @@ public class DatabaseController {
             ParkingSpot s9=new ParkingSpot((long)2448,(long)225,false);
             ParkingSpot s10=new ParkingSpot((long)2449,(long)225,false);
 
+               Ticket t1=new Ticket((long)1,(long)2444,(long)223,2.5,"POL 22 33",new Date(),new Time(1,15,0));
+            Ticket t2=new Ticket((long)2,(long)2445,(long)223,2.5,"POL 28 34",new Date(),new Time(0,40,0));
+            Ticket t3=new Ticket((long)3,(long)2333,(long)222,2.0,"POL 22 33",new Date(),new Time(2,0,0));
+            Ticket t4=new Ticket((long)4,(long)2333,(long)222,2.0,"POL 26 38",new Date(),new Time(0,15,0));
+            Ticket t5=new Ticket((long)5,(long)2446,(long)220,2.5,"POL 29 37",new Date(),new Time(0,2,0));
+            Ticket t6=new Ticket((long)6,(long)2447,(long) 220,2.5,"POL 22 40",new Date(),new Time(0,13,0));
+            Ticket t8=new Ticket((long)8,(long)2448,(long)225,2.5,"POL 22 88",new Date(),new Time(17,0,0));
+            Ticket t9=new Ticket((long)9,(long)2388,(long)224,2.5,"POL 22 69",new Date(),new Time(0,14,0));
+            Ticket t10=new Ticket((long)10,(long)2445,(long)223,2.5,"POL 11 33",new Date(),new Time(1,0,0));
+
+
            */
+            em.getTransaction().begin();
+            ParkingSpot s1=new ParkingSpot((long)2333,(long)222,false,false,null,null);
+            ParkingSpot s2=new ParkingSpot((long)2387,(long)224,false,false,null,null);
+            ParkingSpot s3=new ParkingSpot((long)2388,(long)224,false,false,null,null);
+            ParkingSpot s4=new ParkingSpot((long)2389,(long)224,false,false,null,null);
+            ParkingSpot s5=new ParkingSpot((long)2444,(long)223,false,false,null,null);
+            ParkingSpot s6=new ParkingSpot((long)2445,(long)223,false,false,null,null);
+            ParkingSpot s7 = new ParkingSpot((long)2446,(long)220,false,false,null,null);
+            ParkingSpot s8=new ParkingSpot((long)2447,(long)220,false,false,null,null);
+            ParkingSpot s9=new ParkingSpot((long)2448,(long)225,false,false,null,null);
+            ParkingSpot s10=new ParkingSpot((long)2449,(long)225,false,false,null,null);
 
             Ticket t1=new Ticket((long)1,(long)2444,(long)223,2.5,"POL 22 33",new Date(),new Time(1,15,0));
             Ticket t2=new Ticket((long)2,(long)2445,(long)223,2.5,"POL 28 34",new Date(),new Time(0,40,0));
@@ -60,7 +82,7 @@ public class DatabaseController {
             Ticket t8=new Ticket((long)8,(long)2448,(long)225,2.5,"POL 22 88",new Date(),new Time(17,0,0));
             Ticket t9=new Ticket((long)9,(long)2388,(long)224,2.5,"POL 22 69",new Date(),new Time(0,14,0));
             Ticket t10=new Ticket((long)10,(long)2445,(long)223,2.5,"POL 11 33",new Date(),new Time(1,0,0));
-            em.getTransaction().begin();
+
            /* w1=em.merge(w1);
             w2=em.merge(w2);
             w3=em.merge(w3);
@@ -88,6 +110,16 @@ public class DatabaseController {
             s9=em.merge(s9);
             s10=em.merge(s10);*/
 
+            s1=em.merge(s1);
+            s2=em.merge(s2);
+            s3=em.merge(s3);
+            s4=em.merge(s4);
+            s5=em.merge(s5);
+            s6=em.merge(s6);
+            s8=em.merge(s8);
+            s9=em.merge(s9);
+            s10=em.merge(s10);
+
             t1=em.merge(t1);
             t2=em.merge(t2);
             t3=em.merge(t3);
@@ -99,8 +131,8 @@ public class DatabaseController {
             t10=em.merge(t10);
 
             em.getTransaction().commit();
-            System.out.println("Zapisano w bazie: " + t1);
-            System.out.println("Zapisano w bazie: " + t2);
+            System.out.println("Zapisano w bazie: " + s1);
+            System.out.println("Zapisano w bazie: " + s2);
         }
         catch(Exception e) {
             System.err.println("Blad przy dodawaniu rekordu: " + e);

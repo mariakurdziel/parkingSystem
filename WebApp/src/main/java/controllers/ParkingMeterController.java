@@ -3,6 +3,7 @@ package controllers;
 import ejb.ParkingMeterManagerBean;
 import ejb.UserManagerBean;
 import ejb.dto.ParkingMeter;
+import ejb.dto.ParkingSpot;
 import ejb.dto.Ticket;
 import ejb.dto.Worker;
 import ejb.interfaces.ParkingMeterManager;
@@ -30,6 +31,11 @@ public class ParkingMeterController implements Serializable {
     private UserManager userManagerBean;
     private ParkingMeter parking;
     private  List<Ticket> tickets;
+    private List<ParkingSpot> spots;
+
+    private static boolean render1=false;
+    private static boolean render2=false;
+    private static boolean render3=false;
 
     @PostConstruct
     void init(){
@@ -42,11 +48,17 @@ public class ParkingMeterController implements Serializable {
         else
             parking=new ParkingMeter();
         getParkingTickets();
+        getParkingSpots();
     }
 
     public void getParkingTickets(){
 
         tickets=parkingManagerBean.getParkingMeterTickets(parking.getId());
+    }
+
+    public void getParkingSpots(){
+
+        spots=parkingManagerBean.getParkingSpots(parking.getId());
     }
 
     public ParkingMeterManager getParkingManagerBean() {
@@ -81,5 +93,36 @@ public class ParkingMeterController implements Serializable {
         this.userManagerBean = userManagerBean;
     }
 
+    public List<ParkingSpot> getSpots() {
+        return spots;
+    }
 
+    public void setSpots(List<ParkingSpot> spots) {
+        this.spots = spots;
+    }
+
+
+    public static boolean isRender1() {
+        return render1;
+    }
+
+    public static void setRender1(boolean render1) {
+        ParkingMeterController.render1 = render1;
+    }
+
+    public static boolean isRender2() {
+        return render2;
+    }
+
+    public static void setRender2(boolean render2) {
+        ParkingMeterController.render2 = render2;
+    }
+
+    public static boolean isRender3() {
+        return render3;
+    }
+
+    public static void setRender3(boolean render3) {
+        ParkingMeterController.render3 = render3;
+    }
 }

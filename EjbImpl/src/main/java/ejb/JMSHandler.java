@@ -8,6 +8,7 @@ import javax.ejb.TransactionAttribute;
 import javax.ejb.TransactionAttributeType;
 import javax.inject.Inject;
 import javax.jms.*;
+import java.io.Serializable;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -26,12 +27,12 @@ public class JMSHandler implements JMSHandlerManager {
     // Add business logic below. (Right-click in editor and choose
     // "Insert Code > Add Business Method")
     @TransactionAttribute(TransactionAttributeType.REQUIRES_NEW)
-    public void sendMsg(String txt) {
+    public void sendMsg(Serializable obj, String  ident) {
         try {
-            TextMessage txtMsg=context.createTextMessage("Treść komunikatu");
-            txtMsg.setStringProperty("cecha1", "A");
-            txtMsg.setStringProperty("Operation", "Request");
-            context.createProducer().send(queue, txtMsg);
+            ObjectMessage objMsg=context.createObjectMessage(obj);
+            objMsg.setStringProperty("Operation", "Request");
+            objMsg.setStringProperty("Id", ident);
+            context.createProducer().send(queue, objMsg);
             LOG.info("Send message");
         } catch (JMSException ex) {
             Logger.getLogger(JMSHandler.class.getName()).log(Level.SEVERE, null, ex);
@@ -39,13 +40,14 @@ public class JMSHandler implements JMSHandlerManager {
     }
 
     @TransactionAttribute(TransactionAttributeType.REQUIRES_NEW)
-    public String receiveMsg() {
+    public Serializable receiveMsg(String ident) {
         try {
-            JMSConsumer receiver=context.createConsumer(queue, "Operation = 'Response'");
-            TextMessage resp=(TextMessage)receiver.receive(300000);
-            String respTxt=resp.getText();
+            String selector="Operation = 'Response' AND Source ='" + ident + "'";
+            JMSConsumer receiver=context.createConsumer(queue, selector);
+            ObjectMessage resp=(ObjectMessage)receiver.receive(300000);
+            Serializable respObj=resp.getObject();
             LOG.info("Received message");
-            return respTxt;
+            return respObj;
         } catch (JMSException ex) {
             Logger.getLogger(JMSHandler.class.getName()).log(Level.SEVERE, null, ex);
             return null;

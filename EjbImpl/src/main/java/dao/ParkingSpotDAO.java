@@ -62,12 +62,15 @@ public class ParkingSpotDAO {
             System.err.println("Error when trying to add data to database: " + e);
         }
     }
-    public static void updateParkingSpot(ParkingSpot spot) {
+    public void updateParkingSpot(ParkingSpot spot) {
         try {
             ParkingSpot foundParkingSpot = em.find(ParkingSpot.class, spot.getId());
 
             em.getTransaction().begin();
             foundParkingSpot.setReserved(spot.isReserved());
+            foundParkingSpot.setIs_paid(spot.isIs_paid());
+            foundParkingSpot.setStart_time(spot.getStart_time());
+            foundParkingSpot.setDuration(spot.getDuration());
             em.getTransaction().commit();
         }  catch(Exception e) {
             em.getTransaction().rollback();
@@ -75,7 +78,16 @@ public class ParkingSpotDAO {
         }
     }
 
-    public static ParkingSpot getParkingSpotById(Long id){
+    public ParkingSpot getParkingSpotById(Long id){
+
         return em.find(ParkingSpot.class,id);
+    }
+
+    public static List<ParkingSpot> getSpots() {
+        return spots;
+    }
+
+    public static void setSpots(List<ParkingSpot> spots) {
+        ParkingSpotDAO.spots = spots;
     }
 }

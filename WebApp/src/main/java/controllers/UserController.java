@@ -14,8 +14,10 @@ import javax.jms.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import java.io.Serializable;
+import java.nio.charset.Charset;
 import java.security.Principal;
 import java.util.List;
+import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -38,10 +40,18 @@ public class UserController implements Serializable {
     private JMSHandlerManager jmsHandler;
 
     private static Worker user;
-    private static Worker tmp_user;
+    private Worker tmp_user;
     private static List<Worker> workers;
     private boolean render1=false;
     private boolean render2=false;
+    private long id;
+    private long meter_id;
+    private String login;
+    private String name;
+    private String surname;
+    private boolean is_Admin;
+    private String pswd;
+
 
 
     @PostConstruct
@@ -69,7 +79,7 @@ public class UserController implements Serializable {
 
     public String createUser(){
 
-        userManagerBean.createUser(tmp_user.getId(),tmp_user.getMeter(),tmp_user.getLogin(),tmp_user.getName(),tmp_user.getSurname(),tmp_user.isIs_admin(),tmp_user.getPasswordHash());
+        userManagerBean.createUser(this.id,this.meter_id,this.login,this.name,this.surname,this.is_Admin,this.pswd);
         getListofUsers();
         return "/login/panel.xhtml";
     }
@@ -100,9 +110,6 @@ public class UserController implements Serializable {
         return "/login/form.xhtml";
     }
     public String LogOut() {
-
-        jmsHandler.sendMsg("abc");
-        String resp=jmsHandler.receiveMsg();
 
             FacesContext fc = FacesContext.getCurrentInstance();
             HttpServletRequest request = (HttpServletRequest) fc.getExternalContext().getRequest();
@@ -168,5 +175,74 @@ public class UserController implements Serializable {
 
     public void setTmp_user(Worker tmp_user) {
         this.tmp_user = tmp_user;
+    }
+
+
+    public static Logger getLOG() {
+        return LOG;
+    }
+
+    public JMSHandlerManager getJmsHandler() {
+        return jmsHandler;
+    }
+
+    public void setJmsHandler(JMSHandlerManager jmsHandler) {
+        this.jmsHandler = jmsHandler;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public long getMeter_id() {
+        return meter_id;
+    }
+
+    public void setMeter_id(long meter_id) {
+        this.meter_id = meter_id;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public boolean isIs_Admin() {
+        return is_Admin;
+    }
+
+    public void setIs_Admin(boolean is_Admin) {
+        this.is_Admin = is_Admin;
+    }
+
+    public String getPswd() {
+        return pswd;
+    }
+
+    public void setPswd(String pswd) {
+        this.pswd = pswd;
     }
 }
